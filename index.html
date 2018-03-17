@@ -20,24 +20,26 @@
 		body {
 				opacity: 1;
 				transition: 1s opacity;
-			}
-			body.fade-out {
+		}	
+		body.fade-out {
 				opacity: 0;
 				transition: none;
-			}
+		}
 		html {
 			background-color: white;
-			}
+		}
 	</style>
-        <script>
-			function fadeIn() {
-				document.getElementById("body").classList.remove("fade-out");
-			}
-        </script>
+	<script>
+		function fadeIn() {
+			document.getElementById("body").classList.remove("fade-out");
+		}
+	</script>
     </head>
     
     <body id="body" onload="fadeIn()" style="background-color: rgb(40, 55, 75); margin: 0; padding: 0; min-width: 320px;">
-		<script>document.body.className += ' fade-out';</script>
+		<script>
+			document.body.className += ' fade-out';
+		</script>
         <img src="/Me.png" alt="Steven Aziz" style="display: block; margin-top: 9vh; margin-right: auto; margin-left: auto; width: 290px;">
         <h1 style="margin: 6vh 0 1vh 0; font-family: Myriad Pro, helvetica; font-size: 60px; font-weight: 100; color: white; text-align: center;">
             Steven Aziz
