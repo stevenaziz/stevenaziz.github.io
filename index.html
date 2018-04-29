@@ -71,16 +71,15 @@
 		function fadeIn() {
 			document.getElementById("body").classList.remove("fade-out");
 		}
-		var emailWindow;
+		function open_mailto() {
+			setTimeout(windowOpen, 600);
+		}
 		function windowOpen() {
-			emailwindow = window.open('mailto:contact@stevenaziz.com');
+			emailwindow = window.open('mailto:contact@stevenaziz.com', '_blank');
 			setTimeout(windowClose, 400);
 		}
 		function windowClose() {
 			emailWindow.close();
-		}
-		function open_mailto() {
-			setTimeout(windowOpen, 600);
 		}
 	</script>
     </head>
