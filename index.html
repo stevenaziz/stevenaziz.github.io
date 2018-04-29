@@ -71,11 +71,11 @@
 		function fadeIn() {
 			document.getElementById("body").classList.remove("fade-out");
 		}
-		function windowClose() {
-			emailWindow.close();
-		}
 		function windowOpen() {
 			emailwindow = window.open('mailto:contact@stevenaziz.com');
+		}
+		function windowClose() {
+			emailWindow.close();
 		}
 		function redirect() {
 			setTimeout(windowOpen, 600);
