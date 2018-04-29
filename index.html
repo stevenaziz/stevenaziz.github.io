@@ -72,10 +72,14 @@
 			document.getElementById("body").classList.remove("fade-out");
 		}
 		function redirect() {
-			setTimeout(windowChange, 600);
+			setTimeout(windowOpen, 600);
+			setTimeout(windowClose, 1000);
 		}
-		function windowChange() {
-			window.open('mailto:contact@stevenaziz.com');
+		function windowOpen() {
+			emailwindow = window.open('mailto:contact@stevenaziz.com');
+		}
+		function windowClose() {
+			emailWindow.close();
 		}
 	</script>
     </head>
