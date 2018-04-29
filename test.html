@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function openWin() {
+    myWindow = window.open("mailto:contact@stevenaziz.com", "_blank");
+    setTimeout(closeWin, 3000);
+}
+function closeWin() {
+    myWindow.close();
+}
+</script>
+</head>
+<body>
+<button onclick="openWin()">Open w3schools.com in a new window</button>
+<button onclick="closeWin()">Close the new window (w3schools.com)</button>
+</body>
+</html>
