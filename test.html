@@ -2,17 +2,21 @@
 <html>
 <head>
 <script>
+
 function openWin() {
-    myWindow = window.open("stevenaziz.com", 'width=500 height=500');
+    myWindow = window.open("mailto:contact@stevenaziz.com", "_blank");
     setTimeout(closeWin, 3000);
 }
+
 function closeWin() {
     myWindow.close();
 }
 </script>
+
 </head>
 <body>
-<button onclick="openWin()">Open a new window</button>
-<button onclick="closeWin()">Close the new window</button>
+
+<button onclick="openWin()">Open w3schools.com in a new window</button>
+<button onclick="closeWin()">Close the new window (w3schools.com)</button>
 </body>
 </html>
