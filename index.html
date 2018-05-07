@@ -42,19 +42,20 @@
 		}
 		.emailButton:hover {
   			background: #4868ac radial-gradient(circle, transparent 1%, #4868ac 1%) center/15000%;
+			box-shadow: 0 4px 20px 1px black;
 		}
 		.emailButton:active {
   			background-color: #5a82b2;
   			background-size: 100%;
   			transition: background 0s;
+			box-shadow: 0 4px 30px 1px black;
 		}
 		.emailButton {
 			background-position: center;
-  			transition: background 0.8s;
+  			transition: background 0.8s, box-shadow 0.8s;
 			margin: 0 auto 48px auto;
 			width: 190px;
 			height: 40px;
-  			border: none;
   			border-radius: 20px;
   			padding: 5px 18px;
   			font-size: 25px;
@@ -64,7 +65,7 @@
   			cursor: pointer;
   			color: white;
   			background-color: #364e6b;
-  			outline: none;
+			box-shadow: 0 4px 10px 1px black;
 		}
 	</style>
 	<script>
