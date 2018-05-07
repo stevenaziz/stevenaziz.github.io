@@ -43,11 +43,12 @@
 		.emailButton:hover {
   			background: #446388 radial-gradient(circle, transparent 1%, #446388 1%) center/15000%;
 			box-shadow: 0 2px 20px 1px black;
+			transition: background 0.8s, box-shadow 0.8s;
 		}
 		.emailButton:active {
   			background-color: #88a3c3;
   			background-size: 100%;
-  			transition: background 0s;
+  			transition: background 0s, box-shadow 0.8s;
 			box-shadow: 0 2px 30px 1px black;
 		}
 		.emailButton {
@@ -65,7 +66,6 @@
   			cursor: pointer;
   			color: white;
   			background-color: #364e6b;
-			box-shadow: 0 2px 10px 1px black;
 			outline: none;
 			border: none;
 		}
