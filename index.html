@@ -89,15 +89,11 @@
 			emailWindow.close();
 		}
 		function contactWindow() {
-			document.getElementById('contactWindow').style.display = "block";
 			document.getElementById('scrim').style.display = "block";
-			document.getElementById('contactWindow').style.opacity = "1";
 			document.getElementById('scrim').style.opacity = "0.65";
 		}
 		function exit() {
-			document.getElementById('contactWindow').style.opacity = "0";
 			document.getElementById('scrim').style.opacity = "0";
-			document.getElementById('contactWindow').style.display = "none";
 			document.getElementById('scrim').style.display = "none";
 		}
 	</script>
@@ -107,11 +103,14 @@
 		<script>
 			document.body.className += ' fade-out';
 		</script>
-    	<div class="noDisplay" id="scrim" onclick="exit()" style="z-index: 100; height: 100vh; background-color: black; transition: opacity 0.8s;">
+    	<div class="noDisplay" id="scrim" onclick="exit()" style="position: fixed; top: 0; left: 0; z-index: 100; height: 100vh; background-color: black; transition: opacity 0.8s;">
+    		<div id="contactWindow" style=" opacity: 1; position: absolute; top: calc((100vh - 120px)/2); left: calc((100vw - 180px)/2); width: 180px; height: 120px; border-radius: 20px; background-color: white;">
+			<button>
+			</button>
+			<button>
+			</button>
 		</div>
-    	<div class="noDisplay" id="contactWindow" style="position: fixed; top: calc((100vh - 120px)/2); left: calc((100vw - 180px)/2); z-index: 9; width: 180px; height: 120px; border-radius: 20px; background-color: white; transition: opacity 0.8s;">
-			
-    		</div>
+	    </div>
         <img src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz" style="display: block; margin-top: 9vh; margin-right: auto; margin-left: auto; width: 290px;">
         <h1 style="margin: 6vh 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 60px; font-weight: 400; color: white; text-align: center;">
             Steven Aziz
