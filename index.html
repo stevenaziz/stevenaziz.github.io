@@ -86,13 +86,19 @@
 		}
 		function contactWindow() {
 			document.getElementById('scrim').style.visibility = "visible";
+			document.getElementById('contactWindow').style.visibility = "visible";
 			document.getElementById("scrim").style.transition = "opacity 1.2s";
+			document.getElementById("contactWindow").style.transition = "opacity 1.2s";
 			document.getElementById("scrim").style.opacity = "0.65";
+			document.getElementById("contactWindow").style.opacity = "1";
 		}
 		function exit() {
-			document.getElementById("scrim").style.transition = "opacity 1.2s";
+			document.getElementById("contactWindow").style.opacity = "0";
 			document.getElementById("scrim").style.opacity = "0";
+			document.getElementById("scrim").style.transition = "opacity 1.2s";
+			document.getElementById("contactWindow").style.transition = "opacity 1.2s";
 			document.getElementById('scrim').style.visibility = "hidden";
+			document.getElementById('contactWindow').style.visibility = "hidden";
 		}
 	</script>
     </head>
@@ -102,13 +108,13 @@
 			document.body.className += ' fade-out';
 		</script>
     	<div id="scrim" onclick="exit()" style="visibility: hidden; position: fixed; top: 0px; left: 0px; z-index: 9; width: 100vw; height: 100vh; background-color: black; opacity: 0;">
-    		<div id="contactWindow" style="opacity: 1; position: absolute; top: calc((100vh - 120px)/2); left: calc((100vw - 180px)/2); width: 180px; height: 120px; border-radius: 20px; background-color: white;">
-			<button>
-			</button>
-			<button>
-			</button>
-		</div>
-	    </div>
+    	</div>
+    	<div id="contactWindow" onclick="exit()" style="visibility: hidden; opacity: 0; position: fixed; top: calc((100vh - 120px)/2); left: calc((100vw - 180px)/2); z-index: 10; width: 180px; height: 120px; border-radius: 20px; background-color: white;">
+		<button>
+		</button>
+		<button>
+		</button>
+	</div>
         <img src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz" style="display: block; margin-top: 9vh; margin-right: auto; margin-left: auto; width: 290px;">
         <h1 style="margin: 6vh 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 60px; font-weight: 400; color: white; text-align: center;">
             Steven Aziz
