@@ -1,19 +1,33 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-<button onclick="myFunction()">Click me</button>
-
-<div id="demo" style="background-color: black; transition: opacity 3s; display: none; opacity: 0;">
-  </div>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").style.display = "block";
-  document.getElementById('demo').style.opacity = "1";
-}
-</script>
-
-</body>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Steven Aziz</title>
+	
+	<script>
+		function openContact() {
+			document.getElementById("contactWindow").style.display = "block";
+			document.getElementById("scrim").style.display = "block";
+			document.getElementById("contactWindow").style.opacity = "1";
+			document.getElementById("scrim").style.opacity = "0.65";
+		}
+		function exit() {
+			document.getElementById('contactWindow').style.opacity = "0";
+			document.getElementById('scrim').style.opacity = "0";
+			document.getElementById('contactWindow').style.display = "none";
+			document.getElementById('scrim').style.display = "none";
+		}
+	</script>
+    </head>
+    
+    <body id="body" style="background-color: rgb(36, 52, 71); margin: 0; padding: 0; min-width: 320px;">
+    	<div id="scrim" onclick="exit()" style="z-index: 8; height: 100vh; background-color: black; opacity: 0; transition: opacity 0.8s; display: none;>
+		  </div>
+    	<div id="contactWindow" style="z-index: 9; display: none; width: 180px; height: 120px; margin: calc((100vh - 120px)/2) auto 0 auto; border-radius: 20px; background-color: white; opacity: 0; transition: opacity 0.8s;">
+			
+    	</div>
+		  <button onclick="openContact()">Contact</button>
+    </body>
 </html>
