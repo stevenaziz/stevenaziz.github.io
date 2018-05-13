@@ -84,12 +84,6 @@
 			margin: 0;
 			transition: color 0.8s;
 		}
-		.buttonChange {
-			background-color: #88a3c3;
-		}
-		.textChange {
-			color: white;
-		}
 	</style>
     </head>
     
@@ -194,8 +188,8 @@
 		function contactHover(e) {
 			var button = document.getElementById(e + "Button");
 			var text = document.getElementById(e + "Text");
-			button.classList.add("buttonChange");
-			text.classList.add("textChange");
+			button.style.backgroundColor = "#88a3c3";
+			text.style.color = "white";
 		}
 	</script>
     	<button class="emailButton" onclick="contactWindow()">Contact</button>
