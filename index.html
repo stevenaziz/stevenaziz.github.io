@@ -84,19 +84,17 @@
 		function windowClose() {
 			emailWindow.close();
 		}
-		var f = "document.getElementById('contactWindow')";
-		var s = "document.getElementById('scrim')";
 		function contactWindow() {
-			f.style.display = "block";
-			s.style.display = "block";
-			f.style.opacity = "1";
-			s.style.opacity = "0.65";
+			document.getElementById('contactWindow').style.display = "block";
+			document.getElementById('scrim').style.display = "block";
+			document.getElementById('contactWindow').style.opacity = "1";
+			document.getElementById('scrim').style.opacity = "0.65";
 		}
 		function exit() {
-			f.style.opacity = "0";
-			s.style.opacity = "0";
-			f.style.display = "none";
-			s.style.display = "none";
+			document.getElementById('contactWindow').style.opacity = "0";
+			document.getElementById('scrim').style.opacity = "0";
+			document.getElementById('contactWindow').style.display = "none";
+			document.getElementById('scrim').style.display = "none";
 		}
 	</script>
     </head>
