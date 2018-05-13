@@ -86,8 +86,12 @@
 		}
 		function contactWindow() {
 			document.getElementById('scrim').style.visibility = "visible";
+			document.getElementById("scrim").style.transition = "opacity 1.2s";
+			document.getElementById("scrim").style.opacity = "0.65";
 		}
 		function exit() {
+			document.getElementById("scrim").style.transition = "opacity 1.2s";
+			document.getElementById("scrim").style.opacity = "0";
 			document.getElementById('scrim').style.visibility = "hidden";
 		}
 	</script>
@@ -97,7 +101,7 @@
 		<script>
 			document.body.className += ' fade-out';
 		</script>
-    	<div id="scrim" onclick="exit()" style="visibility: hidden; transition: visibility 1.6s; position: fixed; top: 0px; left: 0px; z-index: 9; height: 100vh; background-color: black; opacity: 0.35;">
+    	<div id="scrim" onclick="exit()" style="visibility: hidden; position: fixed; top: 0px; left: 0px; z-index: 9; width: 100vw; height: 100vh; background-color: black; opacity: 0;">
     		<div id="contactWindow" style="opacity: 1; position: absolute; top: calc((100vh - 120px)/2); left: calc((100vw - 180px)/2); width: 180px; height: 120px; border-radius: 20px; background-color: white;">
 			<button>
 			</button>
