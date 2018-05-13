@@ -75,12 +75,20 @@
 			text-align: center;
 			border: none;
 			padding: 29px;
+			transition: background-color 0.8s;
 		}
 		.contactText {
 			font-family: Myriad Pro Thin, helvetica, sans-serif;
 			font-size: 20px;
 			color: black;
 			margin: 0;
+			transition: color 0.8s;
+		}
+		.buttonChange {
+			background-color: #88a3c3;
+		}
+		.textChange {
+			color: white;
 		}
 	</style>
     </head>
@@ -186,10 +194,8 @@
 		function contactHover(e) {
 			var button = document.getElementById(e + "Button");
 			var text = document.getElementById(e + "Text");
-			button.style.transition = "background-color 0.8s";
-			text.style.transition = "color 0.8s";
-			button.style.backgroundColor = "#88a3c3";
-			text.style.color = "white";
+			button.classList.add("buttonChange");
+			text.classList.add("textChange");
 		}
 	</script>
     	<button class="emailButton" onclick="contactWindow()">Contact</button>
