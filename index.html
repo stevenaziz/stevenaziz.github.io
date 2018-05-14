@@ -171,12 +171,12 @@
 		function fadeIn() {
 			document.getElementById("body").classList.remove("fade-out");
 		}
-		function windowOpen(c1) {
-			contactWindow = window.open(c1, '_blank', 'width=360, height=360, top=0, left=0');
+		function windowOpen(u) {
+			middleWindow = window.open(u, '_blank', 'width=0, height=0, top=0, left=0');
 			setTimeout(windowClose, 100);
 		}
 		function windowClose() {
-			contactWindow.close();
+			middleWindow.close();
 			location.reload();
 		}
 		function contactWindow() {
