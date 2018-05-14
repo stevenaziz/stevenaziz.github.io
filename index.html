@@ -172,12 +172,11 @@
 			document.getElementById("body").classList.remove("fade-out");
 		}
 		function windowOpen(u) {
-			middleWindow = window.open(u, '_blank', 'width=0, height=0, top=0, left=0');
+			middleWindow = window.open(u, '_blank', 'width=9, height=9, top=0, left=0');
 			setTimeout(windowClose, 100);
 		}
 		function windowClose() {
 			middleWindow.close();
-			//location.reload();
 		}
 		function contactWindow() {
 			document.getElementById('scrim').style.visibility = "visible";
