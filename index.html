@@ -84,6 +84,12 @@
 			margin: 0;
 			transition: color 0.8s;
 		}
+		.white {
+			background-color: white;
+		}
+		.grey {
+			background-color: grey;
+		}
 	</style>
     </head>
     
@@ -93,10 +99,10 @@
 		</script>
     	<div id="scrim" onclick="exit()" style="visibility: hidden; position: fixed; top: 0px; left: 0px; z-index: 9; width: 100vw; height: 100vh; background-color: black; opacity: 0;">
     	</div>
-    	<div id="contactWindow" onclick="exit()" style="cursor: pointer; visibility: hidden; opacity: 0; position: fixed; top: calc((100vh - 160px)/2); left: calc((100vw - 280px)/2); z-index: 10; width: 280px; height: 160px; border-radius: 20px; background-color: white;">
-		<button id="phoneButton" onmouseover="contactHover('phone')" class="windowButton" onclick="windowOpen('tel:1-209-591-8166')" style="background-color: #ffffff; border-radius: 20px 20px 0 0;"><p id="phoneText" class="contactText">(209) 591-8166</p></button>
+    	<div id="contactWindow" onclick="exit()" style="cursor: pointer; visibility: hidden; opacity: 0; position: fixed; top: calc((100vh - 160px)/2); left: calc((100vw - 280px)/2); z-index: 10; width: 280px; height: 160px; border-radius: 20px;">
+		<button id="phoneButton" onmouseout="removeHover('phone, white')" onmouseover="contactHover('phone')" class="windowButton white" onclick="windowOpen('tel:1-209-591-8166')" style="background-color: #ffffff; border-radius: 20px 20px 0 0;"><p id="phoneText" class="contactText">(209) 591-8166</p></button>
 		<br>
-		<button id="emailButton" onmouseover="contactHover('email')" class="windowButton" onclick="windowOpen('mailto:contact@stevenaziz.com')" style="background-color: #f2f2f2; border-radius: 0 0 20px 20px;"><p id="emailText" class="contactText">contact@stevenaziz.com</p></button>
+		<button id="emailButton" onmouseout="removeHover('email, grey')" onmouseover="contactHover('email')" class="windowButton grey" onclick="windowOpen('mailto:contact@stevenaziz.com')" style="border-radius: 0 0 20px 20px;"><p id="emailText" class="contactText">contact@stevenaziz.com</p></button>
 	</div>
         <img src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz" style="display: block; margin-top: 9vh; margin-right: auto; margin-left: auto; width: 290px;">
         <h1 style="margin: 6vh 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 60px; font-weight: 400; color: white; text-align: center;">
@@ -190,6 +196,12 @@
 			var text = document.getElementById(e + "Text");
 			button.style.backgroundColor = "#88a3c3";
 			text.style.color = "white";
+		}
+		function removeHover(f, k) {
+			var button = document.getElementById(f + "Button");
+			var text = document.getElementById(f + "Text");
+			button.className = "windowButton " + k;
+			text.style.color = "black";
 		}
 	</script>
     	<button class="emailButton" onclick="contactWindow()">Contact</button>
