@@ -83,6 +83,7 @@
 	    		font-size: 20px;
 	    		color: black;
 	    		transition: color 0.8s;
+                margin: 0;
     		}
     		.white {
     			background-color: white;
@@ -102,9 +103,9 @@
     	<div id="scrim" onclick="exit()" style="visibility: hidden; position: fixed; top: 0px; left: 0px; z-index: 9; width: 100vw; height: 100vh; background-color: black; opacity: 0;">
     	</div>
     	<div id="contactWindow" onclick="exit()" style="cursor: pointer; visibility: hidden; opacity: 0; position: fixed; top: calc((100vh - 160px)/2); left: calc((100vw - 280px)/2); z-index: 10; width: 280px; height: 160px; border-radius: 20px;">
-		    <button id="phoneButton" onmouseout="removeHover('phone', 'white')" onmouseover="contactHover('phone', 'white')" class="windowButton white contactText" onclick="windowOpen('tel:1-209-591-8166')" style="border-radius: 20px 20px 0 0;">(209) 591-8166</button>
+		    <button id="phoneButton" onmouseout="removeHover('phone', 'white')" onmouseover="contactHover('phone', 'white')" class="windowButton white" onclick="windowOpen('tel:1-209-591-8166')" style="border-radius: 20px 20px 0 0;"><p class="contactText">(209) 591-8166</p></button>
 		    <br>
-		    <button id="emailButton" onmouseout="removeHover('email', 'grey')" onmouseover="contactHover('email', 'grey')" class="windowButton grey contactText" onclick="windowOpen('mailto:contact@stevenaziz.com')" style="border-radius: 0 0 20px 20px;">contact@stevenaziz.com</button>
+		    <button id="emailButton" onmouseout="removeHover('email', 'grey')" onmouseover="contactHover('email', 'grey')" class="windowButton grey" onclick="windowOpen('mailto:contact@stevenaziz.com')" style="border-radius: 0 0 20px 20px;"><p class="contactText">contact@stevenaziz.com</p></button>
 	    </div>
     	<div style="position: absolute; top: calc(9vh + 5px); left: calc((100vw - 280px)/2); z-index: -9; width: 280px; height: 280px; border-radius: 50%; box-shadow: 0 7px 16px 4px #1a2533;"></div>
         <img src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz" style="display: block; margin-top: 9vh; margin-right: auto; margin-left: auto; width: 290px;">
