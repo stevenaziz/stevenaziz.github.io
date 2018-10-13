@@ -26,6 +26,7 @@
             svg {
                 width: 30px;
                 transition: width 0.4s;
+                cursor: pointer;
     	    }		
 	        svg:hover {
                 /* this enables the width of the SVG's to change on hover via transition...
@@ -41,11 +42,11 @@
 				transition: none;
 		    }
 		    .emailButton:hover {
-                background: #bfbfbf radial-gradient(circle, transparent 1%, #bfbfbf 1%) center/15000%;
+                background: #595959 radial-gradient(circle, transparent 1%, #595959 1%) center/15000%;
                 box-shadow: 0 4px 9px 1px #595959;
 		    }
 		    .emailButton:active {
-                background-color: #a6a6a6;
+                background-color: #737373;
   			    background-size: 100%;
   			    transition: background 0s;
                 box-shadow: 0 4px 16px 3px #595959;
@@ -63,8 +64,8 @@
 			    text-align: center;
 			    display: block;
   			    cursor: pointer;
-  			    color: white;
-                background-color: #d9d9d9;
+                color: #f2f2f2;
+                background-color: #404040;
                 box-shadow: 0 4px 4px 0px #595959;
 			    outline: none;
 		    	border: none;
@@ -115,7 +116,7 @@
             <h1 style="margin: 6vh 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #404040; text-align: center;">
             Steven Aziz
         </h1>
-            <p style="margin: 0 auto 5vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 15px; font-weight: 200; color: #595959; max-width: 210px; overflow: hidden;">I write code and make crispy photos on the internet.<br>Follow me anywhere.</p>
+            <p style="margin: 0 auto 5vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 18px; font-weight: 200; color: #595959; max-width: 210px; overflow: hidden;">I write code and make crispy photos on the internet.<br>Follow me anywhere.</p>
         <svg onclick="parent.open('https://www.facebook.com/100003726182096')" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; margin-right: 35px; margin-left: calc((100% - 160px)/2);" xml:space="preserve">
             <style type="text/css">
                 <![CDATA[
@@ -202,7 +203,7 @@
 			    var text = document.getElementById(e + "Text");
 		    	button.classList.toggle(m);
 	    		button.classList.toggle("newBackground");
-	    		text.style.color = "white";
+                text.style.color = "#f2f2f2";
 	    	}
 	    	function removeHover(f, k) {
 	    		var button = document.getElementById(f + "Button");
