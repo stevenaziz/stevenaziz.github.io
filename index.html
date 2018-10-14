@@ -34,10 +34,34 @@
                 opacity: 0;
                 transition: none;
             }
-            #profileImg:hover {
+            .shadow {
+                position: absolute;
+                display: inline-block;
+                top: 9vh;
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 1;
+                width: 174px;
+                height: 174px;
+                transition: width 0.4s, height 0.4s;
+                border-radius: 50%;
+                box-shadow: 0 7px 16px 2px #595959;
+            }
+            .profileImg {
+                transition: width 0.4s;
+                cursor: pointer;
+                position: relative;
+                display: block;
+                margin-top: 9vh;
+                z-index: 2;
+                margin-right: auto;
+                margin-left: auto;
+                width: 180px;
+            }
+            .profileImg:hover {
                 width: 190px;
             }
-            #profileImg:hover #shadow {
+            .profileImg:hover .shadow {
                 width: 184px;
                 height: 184px;
             }
@@ -109,8 +133,8 @@
                 window.open(u, '_blank');
             }
 		</script>
-    	<div id="shadow" style="position: absolute; top: 9vh; left: calc((100vw - 174px)/2); z-index: 1; width: 174px; height: 174px; transition: width 0.4s; border-radius: 50%; box-shadow: 0 7px 16px 2px #595959;"></div>
-        <img id="profileImg" src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz" style="transition: width 0.4s; cursor: pointer; position: relative; display: block; margin-top: 9vh; z-index: 2; margin-right: auto; margin-left: auto; width: 180px;">
+    	<div class="shadow"></div>
+        <img class="profileImg" src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz">
         <h1 style="margin: 6vh 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #404040; text-align: center;">
             Steven Aziz</h1>
         <p style="margin: 0 auto 3vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #595959; max-width: 220px; overflow: hidden;">I write code and make crispy photos on the internet.<br>Follow me anywhere.</p>
