@@ -34,6 +34,13 @@
                 opacity: 0;
                 transition: none;
             }
+            #profileImg:hover {
+                width: 190px;
+            }
+            #profileImg:hover #shadow {
+                width: 184px;
+                height: 184px;
+            }
             svg {
                 display: inline-block;
                 margin: 0 4px;
@@ -68,26 +75,24 @@
                 border: none;
                 outline: none;
                 padding: 5px 18px;
-                width: 142px;
+                width: 145px;
                 height: 35px;
                 border-radius: 12px;
                 background-color: #666666
-                background-position: center;
                 text-align: center;
                 font-family: Myriad Pro Thin, helvetica, sans-serif;
-                font-size: 25px;
+                font-size: 22px;
                 font-weight: 100;
                 color: #f2f2f2;
                 transition: background 0.8s, box-shadow 0.8s;
             }
 		    .emailButton:hover {
-                background: #8c8c8c radial-gradient(circle, transparent 1%, #8c8c8c 1%) center/15000%;
+                background-color: #8c8c8c;
                 box-shadow: 0 4px 9px 1px #595959;
 		    }
 		    .emailButton:active {
+                transition: background-color 0s, box-shadow 0s;
                 background-color: #999999;
-  			    background-size: 100%;
-  			    transition: background 0s;
                 box-shadow: 0 4px 16px 3px #595959;
 		    }
 	    </style>
@@ -99,18 +104,14 @@
                 document.getElementById("body").classList.remove("fade-out");
             }
             function windowOpen(u) {
-                middleWindow = window.open(u, '_blank', 'width=, height=32, top=32, left=0');
-                setTimeout(windowClose, 100);
-            }
-            function windowClose() {
-                middleWindow.close();
+                window.open(u, '_blank');
             }
 		</script>
-    	<div style="position: absolute; top: 9vh; left: calc((100vw - 174px)/2); z-index: 1; width: 174px; height: 174px; border-radius: 50%; box-shadow: 0 7px 16px 2px #595959;"></div>
-        <img src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz" style="position: relative; display: block; margin-top: 9vh; z-index: 2; margin-right: auto; margin-left: auto; width: 180px;">
+    	<div id="shadow" style="position: absolute; top: 9vh; left: calc((100vw - 174px)/2); z-index: 1; width: 174px; height: 174px; transition: width 0.4s; border-radius: 50%; box-shadow: 0 7px 16px 2px #595959;"></div>
+        <img id="profileImg" src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz" style="transition: width 0.4s; cursor: pointer; position: relative; display: block; margin-top: 9vh; z-index: 2; margin-right: auto; margin-left: auto; width: 180px;">
         <h1 style="margin: 6vh 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #404040; text-align: center;">
             Steven Aziz</h1>
-        <p style="margin: 0 auto 5vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #595959; max-width: 220px; overflow: hidden;">I write code and make crispy photos on the internet.<br>Follow me anywhere.</p>
+        <p style="margin: 0 auto 3vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #595959; max-width: 220px; overflow: hidden;">I write code and make crispy photos on the internet.<br>Follow me anywhere.</p>
         <div style="text-align: center;">
             <svg id="facebook" onclick="parent.open('https://www.facebook.com/100003726182096')" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
                 <g>
