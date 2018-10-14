@@ -38,12 +38,10 @@
                 position: absolute;
                 display: inline-block;
                 top: 9vh;
-                margin-left: auto;
-                margin-right: auto;
+                left: calc((100vw - 174px)/2);
                 z-index: 1;
                 width: 174px;
                 height: 174px;
-                transition: width 0.4s, height 0.4s;
                 border-radius: 50%;
                 box-shadow: 0 7px 16px 2px #595959;
             }
@@ -60,10 +58,6 @@
             }
             .profileImg:hover {
                 width: 190px;
-            }
-            .profileImg:hover .shadow {
-                width: 184px;
-                height: 184px;
             }
             svg {
                 display: inline-block;
