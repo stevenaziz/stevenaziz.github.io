@@ -78,7 +78,8 @@
                 width: 145px;
                 height: 35px;
                 border-radius: 12px;
-                background-color: #666666
+                background-color: #666666;
+                background-position: center;
                 text-align: center;
                 font-family: Myriad Pro Thin, helvetica, sans-serif;
                 font-size: 22px;
@@ -87,11 +88,12 @@
                 transition: background 0.8s, box-shadow 0.8s;
             }
 		    .emailButton:hover {
-                background-color: #8c8c8c;
+                background: #8c8c8c radial-gradient(circle, transparent 1%, #8c8c8c 1%) center/15000%;
                 box-shadow: 0 4px 9px 1px #595959;
 		    }
 		    .emailButton:active {
-                transition: background-color 0s, box-shadow 0s;
+                transition: background 0s, box-shadow 0s;
+                background-size: 100%;
                 background-color: #999999;
                 box-shadow: 0 4px 16px 3px #595959;
 		    }
