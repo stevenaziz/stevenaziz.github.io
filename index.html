@@ -78,13 +78,13 @@
             .emailButton {
                 display: block;
                 cursor: pointer;
+                text-decoration: none;
                 margin: 2vh auto 3vh auto;
                 box-shadow: 0 4px 4px 0px #595959;
                 border: none;
                 outline: none;
                 padding: 5px 18px;
                 width: 145px;
-                height: 35px;
                 border-radius: 12px;
                 background-color: #666666;
                 background-position: center;
@@ -112,9 +112,6 @@
 			document.body.className += ' fade-out';
             function fadeIn() {
                 document.getElementById("body").classList.remove("fade-out");
-            }
-            function windowOpen(u) {
-                window.open(u, '_blank');
             }
 		</script>
         <img class="profileImg" src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz">
@@ -150,6 +147,6 @@
                 </g>
             </svg>
         </div>
-    	<button class="emailButton" onclick="windowOpen('mailto:contact@stevenaziz.com')">Contact Me</button>
+    	<a class="emailButton" href="mailto:contact@stevenaziz.com">Contact Me</a>
     </body>
 </html>
