@@ -161,7 +161,6 @@
                 font-weight: 100;
                 color: #9b9b9b;
                 transition: background 0.4s, box-shadow 0.4s;
-                z-index: 3;
             }
 		    .emailButton:hover {
                 background-color: #2d2d2d;
@@ -183,12 +182,12 @@
 		</script>
         <div class="blur"></div>
         <div class="scrim"></div>
-        <div style="margin: 0; padding: 0; opacity: 0; z-index: 3;">
-        <img class="profileImg" src="https://www.stevenaziz.com/Me.png" alt="Steven Aziz">
-        <h1 style="margin: 0 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #9b9b9b; text-align: center; z-index: 3;">
+        <div style="position: relative; margin: 0; padding: 0; z-index: 3;">
+        <img class="profileImg" src="/Me.png" alt="Steven Aziz">
+        <h1 style="margin: 0 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #9b9b9b; text-align: center;">
             Steven Aziz</h1>
-        <p style="margin: 0 auto 3vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #696969; max-width: 220px; overflow: hidden; z-index: 3;">Ambitious student, web developer, and Apple sheep.<br><br>Follow me anywhere.</p>
-        <div style="text-align: center; z-index: 3;">
+        <p style="margin: 0 auto 3vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #696969; max-width: 220px; overflow: hidden;">Ambitious student, web developer, and Apple sheep.<br><br>Follow me anywhere.</p>
+        <div style="text-align: center;">
             <svg id="facebook" class="icon" onclick="parent.open('https://www.facebook.com/steven.mastermind')" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
                 <g>
                     <g>
