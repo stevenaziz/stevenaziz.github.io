@@ -34,12 +34,16 @@
                 margin: 0;
                 padding: 6vh 0 6vh 0;
                 min-height: 88vh;
+            }
+            #gradient {
+                background: rgb(28,28,29);
+                background: linear-gradient(180deg, rgba(28,28,29,1) 50%, rgba(0,0,0,1) 100%);
+            }
+            #gif {
                 background-image: url("/drift.gif");
                 background-repeat: no-repeat;
                 background-attachment: scroll;
                 background-size: cover;
-                /*background: rgb(28,28,29);
-                background: linear-gradient(180deg, rgba(28,28,29,1) 50%, rgba(0,0,0,1) 100%);*/
             }
             body.fade-out {
                 opacity: 0;
@@ -173,11 +177,13 @@
 		    }
 	    </style>
     </head>
-    <body id="body" onload="fadeIn()">
+    <body id="body" class="gradient" onload="fadeIn()">
 		<script>
 			document.body.className += ' fade-out';
             function fadeIn() {
                 document.getElementById("body").classList.remove("fade-out");
+                document.getElementById("body").classList.add("gif");
+                document.getElementById("body").classList.remove("gradint");
             }
 		</script>
         <div class="blur"></div>
