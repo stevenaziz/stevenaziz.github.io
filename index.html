@@ -34,16 +34,23 @@
                 margin: 0;
                 padding: 6vh 0 6vh 0;
                 min-height: 88vh;
-            }
-            #gradient {
                 background: rgb(28,28,29);
                 background: linear-gradient(180deg, rgba(28,28,29,1) 50%, rgba(0,0,0,1) 100%);
             }
-            #gif {
+            #drift {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+                opacity: 1;
                 background-image: url("/drift.gif");
                 background-repeat: no-repeat;
                 background-attachment: scroll;
                 background-size: cover;
+                transition: 0.8s opacity;
             }
             body.fade-out {
                 opacity: 0;
@@ -53,7 +60,7 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                z-index: 1;
+                z-index: 2;
                 -webkit-backdrop-filter: blur(6px);
                 backdrop-filter: blur(6px);
                 width: 100vw;
@@ -65,7 +72,7 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                z-index: 2;
+                z-index: 3;
                 background-color: black;
                 opacity: 0.6;
                 width: 100vw;
@@ -177,19 +184,22 @@
 		    }
 	    </style>
     </head>
-    <body id="body" class="gradient" onload="fadeIn()">
+    <body id="body">
 		<script>
 			document.body.className += ' fade-out';
+            document.getElementById("drift").className += ' fade-out';
             function fadeIn() {
                 document.getElementById("body").classList.remove("fade-out");
-                document.getElementById("body").classList.add("gif");
-                document.getElementById("body").classList.remove("gradint");
+            }
+            function fadeInDrift() {
+                document.getElementById("drift").classList.remove("fade-out");
             }
 		</script>
+        <div id="drift" class="drift" onload="fadeInDrift()"></div>
         <div class="blur"></div>
         <div class="scrim"></div>
-        <div style="position: relative; margin: 0; padding: 0; z-index: 3;">
-        <img class="profileImg" src="/Me.png" alt="Steven Aziz">
+        <div style="position: relative; margin: 0; padding: 0; z-index: 4;">
+        <img class="profileImg" src="/Me.png" alt="Steven Aziz" onload="fadeIn()">
         <h1 style="margin: 0 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #9b9b9b; text-align: center;">
             Steven Aziz</h1>
         <p style="margin: 0 auto 3vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #696969; max-width: 220px; overflow: hidden;">Ambitious student, web developer, and Apple sheep.<br><br>Follow me anywhere.</p>
