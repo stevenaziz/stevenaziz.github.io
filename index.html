@@ -37,7 +37,7 @@
                 background: rgb(28,28,29);
                 background: linear-gradient(180deg, rgba(28,28,29,1) 50%, rgba(0,0,0,1) 100%);
             }
-            #drift {
+            .drift {
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -46,7 +46,6 @@
                 width: 100vw;
                 height: 100vh;
                 opacity: 1;
-                background-image: url("/drift.gif");
                 background-repeat: no-repeat;
                 background-attachment: scroll;
                 background-size: cover;
@@ -187,15 +186,13 @@
     <body id="body">
 		<script>
 			document.body.className += ' fade-out';
-            document.getElementById("drift").className += ' fade-out';
+            //document.getElementById("drift").className += ' fade-out';
             function fadeIn() {
                 document.getElementById("body").classList.remove("fade-out");
-            }
-            function fadeInDrift() {
-                document.getElementById("drift").classList.remove("fade-out");
+                document.getElementById("drift").style.backgroundImage = "url('/drift.gif')";
             }
 		</script>
-        <div id="drift" class="drift" onload="fadeInDrift()"></div>
+        <div id="drift" class="drift"></div>
         <div class="blur"></div>
         <div class="scrim"></div>
         <div style="position: relative; margin: 0; padding: 0; z-index: 4;">
