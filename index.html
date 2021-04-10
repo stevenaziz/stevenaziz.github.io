@@ -34,17 +34,14 @@
                 min-height: 88vh;
                 background: linear-gradient(135deg, rgb(100,100,100), rgb(0,0,0) 75%);
                 background-size: 200% 100%;
-                animation: gradient 12s ease infinite;
+                animation: gradient 12s ease 3s alternate infinite;
             }
             @keyframes gradient {
                 0% {
                     background-position: 0% 0%;
                 }
-                50% {
-                    background-position: 100% 0%;
-                }
                 100% {
-                    background-position: 0% 0%;
+                    background-position: 100% 0%;
                 }
             }
             .drift {
