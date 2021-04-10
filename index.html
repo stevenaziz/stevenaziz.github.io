@@ -34,7 +34,20 @@
                 margin: 0;
                 padding: 6vh 0 6vh 0;
                 min-height: 88vh;
-                background: linear-gradient(180deg, rgba(28,28,29,1) 50%, rgba(0,0,0,1) 100%);
+                background-size: 400% 400%;
+                background: linear-gradient(180deg, rgb(28,28,29) 50%, rgb(0,0,0) 100%);
+                animation: gradient 15s ease infinite;
+            }
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
             }
             .drift {
                 position: fixed;
@@ -185,10 +198,9 @@
     <body id="body">
 		<script>
 			document.body.className += ' fade-out';
-            //document.getElementById("drift").className += ' fade-out';
             function fadeIn() {
                 document.getElementById("body").classList.remove("fade-out");
-                document.getElementById("drift").style.backgroundImage = "url('/drift.gif')";
+                //document.getElementById("drift").style.backgroundImage = "url('/drift.gif')";
             }
 		</script>
         <div id="drift" class="drift"></div>
@@ -198,7 +210,7 @@
         <img class="profileImg" src="/Me.png" alt="Steven Aziz" onload="fadeIn()">
         <h1 style="margin: 0 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #9b9b9b; text-align: center;">
             Steven Aziz</h1>
-        <p style="margin: 0 auto 3vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #696969; max-width: 220px; overflow: hidden;">Ambitious student, optimistic investor, and sincere Christian.<br><br>Follow me anywhere.</p>
+        <p style="margin: 0 auto 3vh auto; padding: 0 8px 0 8px; text-align: center; font-family: Myriad Pro Thin, helvetica, sans-serif; font-size: 19px; font-weight: 200; color: #696969; max-width: 230px; overflow: hidden;">Ambitious student, optimistic investor, and sincere Christian.<br><br>Follow me anywhere.</p>
         <div style="text-align: center;">
             <svg id="facebook" class="icon" onclick="parent.open('https://www.facebook.com/steven.mastermind')" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
                 <g>
