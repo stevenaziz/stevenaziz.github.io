@@ -32,7 +32,7 @@
                 transition: 0.8s opacity;
                 padding: 6vh 0 6vh 0;
                 min-height: 88vh;
-                background: linear-gradient(135deg, rgb(100,100,100), rgb(0,0,0) 75%);
+                background-image: url('/abstract.JPG');
                 background-size: 200% 100%;
                 animation: gradient 8s ease 3s alternate infinite;
             }
@@ -44,20 +44,6 @@
                     background-position: 100% 0%;
                 }
             }
-            .drift {
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 1;
-                margin: 0;
-                width: 100vw;
-                height: 100vh;
-                opacity: 1;
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-                background-size: cover;
-                transition: 0.8s opacity;
-            }
             .fade-out {
                 opacity: 0;
                 transition: none;
@@ -66,7 +52,7 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                z-index: 2;
+                z-index: -2;
                 -webkit-backdrop-filter: blur(6px);
                 backdrop-filter: blur(6px);
                 width: 100vw;
@@ -78,7 +64,7 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                z-index: 3;
+                z-index: -1;
                 background-color: black;
                 opacity: 0.6;
                 width: 100vw;
@@ -197,6 +183,8 @@
                 document.getElementById("body").classList.remove("fade-out");
             }
 		</script>
+        <div class="blur"></div>
+        <div class="scrim"></div>
         <img class="profileImg" src="/Me.png" alt="Steven Aziz" onload="fadeIn()">
         <h1 style="margin: 0 0 1vh 0; font-family: Myriad Pro Text, helvetica, sans-serif; font-size: 40px; font-weight: 100; color: #9b9b9b; text-align: center;">
             Steven Aziz</h1>
