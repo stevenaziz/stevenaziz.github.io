@@ -39,6 +39,7 @@
                 background-image: url('/abstract.jpg');
                 background-size: 200% 100%;
                 animation: gradient 24s ease-in-out alternate infinite;
+                overflow: hidden;
             }
             @keyframes gradient {
                 0% {
@@ -54,7 +55,7 @@
             }
             .blur {
                 position: fixed;
-                top: 0;
+                top: -135px;
                 left: 0;
                 z-index: 1;
                 -webkit-backdrop-filter: blur(18px);
@@ -62,19 +63,19 @@
                 width: 100vw;
                 display: block;
                 margin: 0;
-                height: 100vh;
+                height: calc(100vh + 270px);
             }
             .scrim {
                 position: fixed;
-                top: 0;
+                top: -135px;
                 left: 0;
                 z-index: 2;
                 background-color: black;
-                opacity: 0.8;
+                opacity: 0.75;
                 width: 100vw;
                 display: block;
                 margin: 0;
-                height: 100vh;
+                height: calc(100vh + 270px);
             }
             .profileImg {
                 transition: width 0.4s, height 0.4s, box-shadow 0.4s, margin 0.4s;
