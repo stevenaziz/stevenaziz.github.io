@@ -250,6 +250,10 @@ header {
     font-size: 1rem;
 }
 footer {
-    padding: 20px;
-    color: rgb(125, 125, 125)
+    padding: 20px 40px;
+}
+footer>p {
+    color: rgb(125, 125, 125);
+    max-width: 1000px;
+    margin: 0 auto;
 }
