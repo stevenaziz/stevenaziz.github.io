@@ -178,6 +178,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 650px;
 }
 main>img {
     width: 240px;
