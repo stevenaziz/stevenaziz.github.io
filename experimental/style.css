@@ -249,3 +249,7 @@ header {
     padding: 5px 10px;
     font-size: 1rem;
 }
+footer {
+    padding: 20px;
+    color: rgb(125, 125, 125)
+}
