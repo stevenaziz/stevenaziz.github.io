@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="apple-mobile-web-app-title" content="Steven Aziz">
+    <meta name="application-name" content="Steven Aziz">
+    <meta name="msapplication-TileColor" content="#1c1c1c">
+    <meta name="theme-color" content="#1c1c1c">
+    <link rel="preload" href="/Myriad Pro - Text.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/Myriad Pro - Thin.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=994">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=994">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=994">
+    <link rel="manifest" href="/site.webmanifest?v=994">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=994" color="#1c1c1c">
+    <link rel="shortcut icon" href="/favicon.ico?v=994">
+    <link rel="stylesheet" href="style.css">
+    <title>Steven Aziz</title>
+</head>
+<body class="fade-out" onload="start()" onresize="redraw()">
+    <nav class="nav-container">
+        <nav class="nav-main">
+            <a href="javascript:closeDropdown(); window.location='#main'">Steven Aziz</a>
+            <span class="nav-desktop">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#coursework">Coursework</a>
+                <a href="#contact">Contact</a>
+            </span>
+            <span class="nav-toggle" onclick="toggleDropdown()">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+            </span>
+        </nav>
+        <div class="nav-separator"></div>
+        <nav class="nav-mobile-menu">
+            <a href="javascript:closeDropdown(); window.location='#about'">About</a>
+            <a href="javascript:closeDropdown(); window.location='#projects'">Projects</a>
+            <a href="javascript:closeDropdown(); window.location='#skills'">Skills</a>
+            <a href="javascript:closeDropdown(); window.location='#coursework'">Coursework</a>
+            <a href="javascript:closeDropdown(); window.location='#contact'" style="border-style: none;">Contact</a>
+        </nav>
+    </nav>
+    <main id="main">
+        <img src="headshot.jpg" alt="Steven's Portrait Photo">
+        <h1>Steven Aziz</h1>
+        <h2>Computer Science Undergraduate Student<br>Seattle Pacific University<br><small>Seattle, WA</small></h2>
+        <p>&#8595;</p>
+    </main>
+    <section id="about" class="about">
+        <header>About Steven</header>
+        <p>
+            I am an immensely curious and obsessively-detailed person with significant achievements in my education, and many aspirations.
+            <br><br>Currently, I'm a junior computer science student at Seattle Pacific University pursuing a Bachelor of Science but I won't 
+            be stopping there; after graduating with my degree in computer science I will be continuing my education in graduate school to 
+            obtain a Masters in my field. Throughout my rigorous education (especially during High School where I pursued and graduated with 
+            an International Baccalaureate "IB" Diploma, the most prestigious high school diploma recognized in over 100 countries around the 
+            world) I've also worked many different roles to gain work experience and valuable team skills. I currently hold the title of 
+            Technical Expert at Apple, a role that involves obsessive customer-focus and incredible teamwork to uphold the brand image Apple 
+            demands.<br><br>I am skilled in over six (6) programming languages, as well as object-oriented design, advanced mathematics, and several 
+            software development platforms. I have the ability to quickly and accurately troubleshoot and diagnose technical issues, as well as 
+            communicate complex technical subjects effectively and concisely in writing.<br><br>As an up-and-coming software engineer I am seeking 
+            internships in software-related roles to gain experience and learn as much as possible from actual industry experts. I am excited to 
+            begin my career and to bring tremendous value to the next company that will have me.
+        </p>
+    </section>
+    <section id="projects" class="projects">
+        <header>Steven's Projects</header>
+        <div class="projects-grid">
+            <div>
+                <img src="expression-simplifier-snippet.png" alt="Expression simplifier code snippet">
+                <h1>Expression Simplifer</h1>
+                <span class="project-type">Individual</span>
+                <span class="project-type">Data Structures I</span>
+                <p>
+                    Using <b>C++</b>, implemented a postfix expression simplifier that reads in an algebraic expression written in postfix 
+                    and turns it into a binary expression tree. The simplifier recognizes both numbers and variables, and can perform basic operations 
+                    such as + (addition), - (subtraction), and *(multiplication).</p>
+            </div>
+            <div>
+                <img src="list-web-app-snippet.png" alt="Simple list web app code snippet">
+                <h1>Simple List Web App</h1>
+                <span class="project-type">Group</span>
+                <span class="project-type">Netcentric Computing</span>
+                <p>
+                    Using <b>HTML, CSS, JavaScript, and Node.js</b>, implemented both front-end and back-end components of a simple list web app that has
+                    the ability to add data to a simulated database via a JSON file, remove data from the "database", and load the data each time the page 
+                    loads. The Node.js module Express was used to support the backend.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <header>Steven's Skills</header>
+    </section>
+    <section id="coursework">
+        <header>Steven's Coursework</header>
+    </section>
+    <section id="contact">
+        <header>Contact Steven</header>
+    </section>
+    <footer></footer>
+    <script>
+        function fadeIn() {
+            document.body.classList.remove("fade-out");
+        }
+        function toggleDropdown() {
+            document.body.classList.toggle("fullscreen-nav");
+        }
+        function closeDropdown() {
+            if (document.body.classList.contains("fullscreen-nav")) {
+                toggleDropdown();
+            }
+        }
+        function redraw() {
+            if (window.innerWidth < 800) {
+                document.body.classList.add("mobile");
+            }
+            else {
+                closeDropdown();
+                document.body.classList.remove("mobile");
+            }
+        }
+        function start() {
+            fadeIn();
+            redraw();
+        }
+    </script>
+</body>
+</html>
