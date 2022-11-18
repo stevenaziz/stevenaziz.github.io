@@ -210,7 +210,7 @@ main>p {
 
 }
 section {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(250, 250, 250);
     border-top: 12px solid white;
     padding: 72px 40px;
 }
@@ -236,7 +236,7 @@ header {
     flex-wrap: wrap;
 }
 .projects-grid>div {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(240, 240, 240);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -250,7 +250,7 @@ header {
     border-radius: 10px;
 }
 .project-type {
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(225, 223, 223);
     border-radius: 20px;
     padding: 5px 10px;
     font-size: 1rem;
@@ -259,7 +259,7 @@ footer {
     padding: 20px 40px;
 }
 footer>p {
-    color: rgb(125, 125, 125);
+    color: rgb(100, 100, 100);
     max-width: 1000px;
     margin: 0 auto;
 }
