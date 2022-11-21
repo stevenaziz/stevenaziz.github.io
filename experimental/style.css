@@ -98,10 +98,10 @@ body {
     cursor: pointer;
 }
 .nav-toggle:hover .bar1 {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(155, 155, 155);
 }
-.nav-menu-btn:hover .bar2 {
-    background-color: rgb(245, 245, 245);
+.nav-toggle:hover .bar2 {
+    background-color: rgb(155, 155, 155);
 }
 .bar1 {
     display: block;
