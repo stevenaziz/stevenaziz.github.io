@@ -39,7 +39,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    min-width: min-content;
+    min-width: 320px;
     transition: 0.8s opacity;
 }
 .fade-out {
@@ -56,19 +56,19 @@ body {
     right: 0;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.8);
-    height: 72px;
+    height: 72px; /* Consider changing */
     margin: 0;
     padding: 0;
     -webkit-backdrop-filter: saturate(1.8) blur(20px);
     backdrop-filter: saturate(1.8) blur(20px);
-    transition: height 0.5s ease-in-out, background-color 0.2s ease-in-out 0.3s;
+    transition: height 0.4s ease-in-out, background-color 0.2s ease-in-out 0.3s;
     overflow: hidden;
 }
 .nav-main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 72px;
+    height: 72px; /* Consider changing */
 }
 .nav-main>a {
     text-decoration: none;
@@ -132,7 +132,7 @@ body {
     opacity: 0.1;
     height: auto;
     margin: 0;
-    padding: 0 20%;
+    padding: 0 18%;
     transition: opacity 0.5s ease-in-out;
 }
 .nav-mobile-menu>a {
@@ -179,7 +179,7 @@ header, h1, h2, p, span {
     font-family: "Myriad Pro Text", "Helvetica Neue", "Helvetica";
 }
 main {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("main-img.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("main-img.jpg");
     background-size: cover;
     background-attachment: fixed;
     padding: 102px 30px 30px 30px;
@@ -188,7 +188,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 650px;
+    min-height: 640px;
 }
 main>img {
     width: 240px;
