@@ -36,14 +36,19 @@
 * {
     font-family: "Myriad Pro Text", "Helvetica Neue", "Helvetica";
 }
-html {
+:root {
     scroll-behavior: smooth;
+
+    --white: #ffffff;
+    --transWhite: rgba(255, 255, 255, 0.9);
+    --gray: rgb(155, 155, 155);
+    --transGray: rgba(155, 155, 155, 0.9);
 }
 body {
     margin: 0;
     padding: 0;
     min-width: 320px;
-    transition: 0.8s opacity;
+    transition: opacity 0.8s;
 }
 .fade-out {
     opacity: 0;
@@ -77,21 +82,21 @@ body {
     text-decoration: none;
     font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
     font-size: 29px;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     transition: color .25s;
 }
 .nav-main>a:hover {
-    color: rgb(155, 155, 155);
+    color: var(--gray);
 }
 .nav-desktop>a {
     text-decoration: none;
     font-size: 19px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--transWhite);
     transition: color .25s;
     padding: 0 .5vw;
 }
 .nav-desktop>a:hover {
-    color: rgba(155, 155, 155, 0.9);
+    color: var(--transGray);
 }
 .nav-toggle {
     display: none;
@@ -100,16 +105,16 @@ body {
     cursor: pointer;
 }
 .nav-toggle:hover .bar1 {
-    background-color: rgba(155, 155, 155, 0.9);
+    background-color: var(--transGray);
 }
 .nav-toggle:hover .bar2 {
-    background-color: rgba(155, 155, 155, 0.9);
+    background-color: var(--transGray);
 }
 .bar1 {
     display: block;
     width: 24px;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--transWhite);
     margin-bottom: 10px;
     transition: 0.5s;
 }
@@ -117,13 +122,13 @@ body {
     display: block;
     width: 24px;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--transWhite);
     margin: 0;
     transition: 0.5s;
 }
 .nav-separator {
     height: 1px;
-    background-color: rgb(155, 155, 155);
+    background-color: var(--gray);
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -141,15 +146,15 @@ body {
     display: block;
     text-align: left;
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     text-decoration: none;
     padding: 24px 0;
     margin: 0;
-    border-bottom: 1px solid rgb(155, 155, 155);
+    border-bottom: 1px solid var(--gray);
     transition: color 0.4s;
 }
 .nav-mobile-menu>a:hover {
-    color: rgb(155, 155, 155);
+    color: var(--gray);
 }
 .mobile .nav-desktop {
     display: none !important;
@@ -192,20 +197,20 @@ main>img {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid var(--white);
     filter: brightness(0.9);
     -webkit-filter: brightness(0.9);
     flex-grow: 0;
     flex-shrink: 0;
 }
 main>h1 {
-    color: white;
+    color: var(--white);
     font-size: 6rem;
     margin: 2vh 0 1vh;
     text-align: center;
 }
 main>h2 {
-    color:white;
+    color:var(--white);
     opacity: 0.9;
     font-size: 2rem;
     margin: 0;
@@ -213,7 +218,7 @@ main>h2 {
 }
 main>p {
     padding: 20px;
-    color: white;
+    color: var(--white);
     opacity: 0.8;
     text-decoration: none;
     font-size: 3rem;
@@ -221,7 +226,7 @@ main>p {
 }
 section {
     background-color: rgb(250, 250, 250);
-    border-top: 10px solid white;
+    border-top: 10px solid var(--white);
     padding: 72px 40px;
 }
 section>* {
@@ -260,7 +265,7 @@ header {
     border-radius: 10px;
 }
 .project-type {
-    background-color: rgb(225, 223, 223);
+    background-color: rgb(225, 225, 225);
     border-radius: 20px;
     padding: 5px 10px;
     font-size: 1rem;
