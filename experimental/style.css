@@ -179,11 +179,11 @@ header, h1, h2, p, span {
     font-family: "Myriad Pro Text", "Helvetica Neue", "Helvetica";
 }
 main {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("main-img.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("abstract_artwork.jpg");
     background-size: cover;
     background-attachment: fixed;
-    padding: 102px 30px 30px 30px;
-    height: calc(100vh - 132px);
+    padding: 94px 30px 30px 30px;
+    height: calc(100vh - 124px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,7 +195,8 @@ main>img {
     height: 240px;
     border-radius: 50%;
     border: 3px solid white;
-    box-shadow: 0 4px 45px -10px #000000;
+    filter: brightness(0.85);
+    -webkit-filter: brightness(0.85);
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -206,7 +207,8 @@ main>h1 {
     text-align: center;
 }
 main>h2 {
-    color:rgb(245, 245, 245);
+    color:white;
+    opacity: 0.85;
     font-size: 2rem;
     margin: 0;
     text-align: center;
@@ -214,10 +216,10 @@ main>h2 {
 main>p {
     padding: 20px;
     color: white;
+    opacity: 0.7;
     text-decoration: none;
     font-size: 3rem;
     animation: stretch alternate 2s ease-in-out infinite;
-
 }
 section {
     background-color: rgb(250, 250, 250);
