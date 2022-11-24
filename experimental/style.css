@@ -187,13 +187,13 @@ main {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    background-repeat: no-repeat;
     padding: 94px 30px 30px 30px;
-    height: calc(100vh - 124px);
+    min-height: calc(100vh - 124px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 640px;
 }
 main>img {
     width: 240px;
