@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="style.css">
     <title>Steven Aziz</title>
 </head>
-<body class="fade-out" onload="start()" onresize="redraw()">
+<body class="fade-out" onload="Main()" onresize="CheckViewport()">
     <nav>
         <div class="nav-main">
-            <a href="#main" onclick="closeDropdown()">Steven Aziz</a>
+            <a href="#main">Steven Aziz</a>
             <span class="nav-desktop">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -27,18 +27,18 @@
                 <a href="#coursework">Coursework</a>
                 <a href="#contact">Contact</a>
             </span>
-            <span class="nav-toggle" onclick="toggleDropdown()">
+            <span class="nav-toggle" onclick="ToggleDropdown()">
                 <span class="bar1"></span>
                 <span class="bar2"></span>
             </span>
         </div>
         <div class="nav-separator"></div>
         <div class="nav-mobile-menu">
-            <a href="#about" onclick="closeDropdown()">About</a>
-            <a href="#skills" onclick="closeDropdown()">Skills</a>
-            <a href="#projects" onclick="closeDropdown()">Projects</a>
-            <a href="#coursework" onclick="closeDropdown()">Coursework</a>
-            <a href="#contact" onclick="closeDropdown()" style="border-style: none;">Contact</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#coursework">Coursework</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
     <main id="main">
@@ -105,30 +105,39 @@
         <p>Copyrigt &copy; 2022 Steven Aziz. All rights Reserved.</p>
     </footer>
     <script>
-        function fadeIn() {
-            document.body.classList.remove("fade-out");
-        }
-        function toggleDropdown() {
+        // Toggles the mobile nav dropdown
+        function ToggleDropdown() {
             document.body.classList.toggle("fullscreen-nav");
         }
-        function closeDropdown() {
+
+        // Checks whether the mobile nav dropdown is open and closes it
+        function CloseDropdown() {
             if (document.body.classList.contains("fullscreen-nav")) {
-                toggleDropdown();
+                ToggleDropdown();
             }
-            return true;
         }
-        function redraw() {
+
+        // Applies mobile class to body if viewport is too small
+        function CheckViewport() {
             if (window.innerWidth < 768) {
                 document.body.classList.add("mobile");
             }
             else {
-                closeDropdown();
+                CloseDropdown();
                 document.body.classList.remove("mobile");
             }
         }
-        function start() {
-            fadeIn();
-            redraw();
+
+        // Function is run when the page initially loads
+        function Main() {
+            CheckViewport();
+            
+            const mobileLinks = document.querySelectorAll("nav>div>a");
+            for (anchor of mobileLinks) {
+                anchor.addEventListener('click', CloseDropdown);
+            }
+
+            document.body.classList.remove("fade-out");
         }
     </script>
 </body>
