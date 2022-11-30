@@ -17,9 +17,9 @@
     <title>Steven Aziz</title>
 </head>
 <body class="fade-out" onload="start()" onresize="redraw()">
-    <nav class="nav-container">
-        <nav class="nav-main">
-            <a href="javascript:closeDropdown(); window.location='#main'">Steven Aziz</a>
+    <nav>
+        <div class="nav-main">
+            <a href="#main" onclick="closeDropdown()">Steven Aziz</a>
             <span class="nav-desktop">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -31,15 +31,15 @@
                 <span class="bar1"></span>
                 <span class="bar2"></span>
             </span>
-        </nav>
+        </div>
         <div class="nav-separator"></div>
-        <nav class="nav-mobile-menu">
-            <a href="javascript:closeDropdown(); window.location='#about'">About</a>
-            <a href="javascript:closeDropdown(); window.location='#skills'">Skills</a>
-            <a href="javascript:closeDropdown(); window.location='#projects'">Projects</a>
-            <a href="javascript:closeDropdown(); window.location='#coursework'">Coursework</a>
-            <a href="javascript:closeDropdown(); window.location='#contact'" style="border-style: none;">Contact</a>
-        </nav>
+        <div class="nav-mobile-menu">
+            <a href="#about" onclick="closeDropdown()">About</a>
+            <a href="#skills" onclick="closeDropdown()">Skills</a>
+            <a href="#projects" onclick="closeDropdown()">Projects</a>
+            <a href="#coursework" onclick="closeDropdown()">Coursework</a>
+            <a href="#contact" onclick="closeDropdown()" style="border-style: none;">Contact</a>
+        </div>
     </nav>
     <main id="main">
         <img src="headshot.jpg" alt="Steven's Portrait Photo">
@@ -115,6 +115,7 @@
             if (document.body.classList.contains("fullscreen-nav")) {
                 toggleDropdown();
             }
+            return true;
         }
         function redraw() {
             if (window.innerWidth < 768) {
