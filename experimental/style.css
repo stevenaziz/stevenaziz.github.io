@@ -48,6 +48,11 @@
         color: var(--gray);
     }
 }
+@supports (background-attachment: fixed) {
+    main {
+        background-attachment: fixed !important;
+    }
+}
 * {
     font-family: "Myriad Pro Text", "Helvetica Neue", "Helvetica";
     margin: 0;
@@ -178,7 +183,6 @@ main {
     background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.2)), url("abstract_artwork.jpg");
     background-color: hsl(0, 0%, 0%);
     background-size: cover;
-    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
