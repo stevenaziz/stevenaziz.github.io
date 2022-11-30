@@ -56,12 +56,12 @@
 }
 :root {
     scroll-behavior: smooth;
-    background-color: #000000;
+    background-color: hsl(0, 0%, 0%);
 
-    --white: #ffffff;
-    --transWhite: rgba(255, 255, 255, 0.9);
-    --gray: rgb(155, 155, 155);
-    --transGray: rgba(155, 155, 155, 0.9);
+    --white: hsl(0, 0%, 100%);
+    --transWhite: hsla(0, 0%, 100%, 0.9);
+    --gray: hsl(0, 0%, 61%);
+    --transGray: hsla(0, 0%, 61%, 0.9);
 }
 body {
     min-width: 320px;
@@ -80,7 +80,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: hsla(0, 0%, 0%, 0.8);
     height: 64px;
     -webkit-backdrop-filter: saturate(1.8) blur(20px);
     backdrop-filter: saturate(1.8) blur(20px);
@@ -175,10 +175,10 @@ nav {
     opacity: 0.9;
 }
 main {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("abstract_artwork.jpg");
-    background-color: #000000;
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.2)), url("abstract_artwork.jpg");
+    background-color: hsl(0, 0%, 0%);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
@@ -202,7 +202,7 @@ main>img {
 main>h1 {
     color: var(--white);
     font-size: 6rem;
-    margin: 2vh 0 1vh;
+    margin: 2rem 0 1rem;
     text-align: center;
 }
 main>h2 {
@@ -212,14 +212,14 @@ main>h2 {
     text-align: center;
 }
 main>p {
-    margin-top: 0.5vh;
+    margin-top: 1rem;
     color: var(--white);
     opacity: 0.8;
     font-size: 3rem;
     animation: bounce alternate 2s ease-in-out infinite;
 }
 section {
-    background-color: rgb(250, 250, 250);
+    background-color: hsl(0, 0%, 98%);
     border-top: 10px solid var(--white);
     padding: 72px 40px;
 }
@@ -244,7 +244,7 @@ header {
     flex-wrap: wrap;
 }
 .projects-grid>div {
-    background-color: rgb(240, 240, 240);
+    background-color: hsl(0, 0%, 94%);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -258,18 +258,18 @@ header {
     border-radius: 10px;
 }
 .project-type {
-    background-color: rgb(225, 225, 225);
+    background-color: hsl(0, 0%, 88%);
     border-radius: 20px;
     padding: 5px 10px;
     font-size: 1rem;
 }
 footer {
-    background-color: rgb(250, 250, 250);
-    border-top: 12px solid white;
+    background-color: hsl(0, 0%, 98%);
+    border-top: 12px solid var(--white);
     padding: 20px 40px;
 }
 footer>p {
-    color: rgb(100, 100, 100);
+    color: hsl(0, 0%, 39%);
     max-width: 1000px;
     margin: 0 auto;
 }
