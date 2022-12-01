@@ -16,7 +16,7 @@
         transform: translateY(20px);
     }
 }
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     html {
         font-size: 12px;
     }
@@ -30,7 +30,7 @@
     html {
         font-size: 16px;
     }
-}
+} */
 @media (hover:hover) {
     .nav-main>a:hover {
         color: var(--white);
@@ -57,6 +57,7 @@
 :root {
     scroll-behavior: smooth;
     background-color: hsl(0, 0%, 0%);
+    font-size: clamp(10px, 2.5vmin, 18px);
 
     --white: hsl(0, 0%, 100%);
     --transWhite: hsla(0, 0%, 100%, 0.8);
@@ -242,7 +243,7 @@ header {
 .about>p {
     margin: 20px auto;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 .projects-grid {
     display: flex;
