@@ -12,10 +12,10 @@ function CloseDropdown() {
 
 // Applies mobile class to body if viewport is too small
 function CheckViewport() {
-    if (window.innerWidth < 769) {
+    if (window.innerWidth < 769 && !document.body.classList.contains("mobile")) {
         document.body.classList.add("mobile");
     }
-    else {
+    else if (window.innerWidth >= 769 && document.body.classList.contains("mobile")) {
         CloseDropdown();
         document.body.classList.remove("mobile");
     }

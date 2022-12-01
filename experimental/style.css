@@ -136,7 +136,8 @@ nav {
 .nav-mobile-menu {
     opacity: 0.25;
     height: auto;
-    padding: 0 calc((100vw - 122px) / 4);
+    padding: 0 calc((100vw - 122px) / 4) 22px;
+    overflow: scroll;
     transition: opacity .3s ease-in-out .1s;
 }
 .nav-mobile-menu>a {
@@ -161,7 +162,6 @@ nav {
 .fullscreen-nav nav {
     height: 100vh !important;
     background-color: hsla(0, 0%, 0%, 1) !important;
-    overflow: scroll !important;
     transition: height .4s ease-in-out, background-color .1s ease-in-out !important;
 }
 .fullscreen-nav .bar1 {
