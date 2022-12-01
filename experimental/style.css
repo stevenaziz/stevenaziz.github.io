@@ -134,11 +134,15 @@ nav {
     transition: opacity .3s ease-in-out .1s, margin .3s ease-in-out .1s;
 }
 .nav-mobile-menu {
+    position: absolute;
+    top: 49px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     opacity: 0.25;
-    height: auto;
     padding: 0 calc((100vw - 122px) / 4) 22px;
-    overflow: scroll;
-    transition: opacity .3s ease-in-out .1s;
+    overflow-y: auto;
+    transition: opacity .3s ease-in-out .1s, top .3s ease-in-out .1s;
 }
 .nav-mobile-menu>a {
     font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
@@ -160,7 +164,7 @@ nav {
     display: inline-block !important;
 }
 .fullscreen-nav nav {
-    height: 100vh !important;
+    height: 100% !important;
     background-color: hsla(0, 0%, 0%, 1) !important;
     transition: height .4s ease-in-out, background-color .1s ease-in-out !important;
 }
@@ -176,17 +180,17 @@ nav {
 }
 .fullscreen-nav .nav-mobile-menu {
     opacity: 1 !important;
+    top: 71px !important;
 }
 main {
     box-sizing: border-box;
     background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.2)), url("abstract_artwork.jpg");
-    background-color: hsl(0, 0%, 0%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;
-    padding: 94px 30px 30px 30px;
+    padding: 78px 30px 30px 30px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -194,8 +198,7 @@ main {
     align-items: center;
 }
 main>img {
-    width: 240px;
-    height: 240px;
+    width: clamp(140px, 60vw, 240px);
     border-radius: 50%;
     border: 5px solid var(--white);
     filter: brightness(0.9);
