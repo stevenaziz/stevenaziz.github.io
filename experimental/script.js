@@ -12,10 +12,12 @@ function CloseDropdown() {
 
 // Applies mobile class to body if viewport is too small
 function CheckViewport() {
-    if (window.innerWidth < 769 && !document.body.classList.contains("mobile")) {
+    let breakpoint = 960;
+
+    if (window.innerWidth < breakpoint && !document.body.classList.contains("mobile")) {
         document.body.classList.add("mobile");
     }
-    else if (window.innerWidth >= 769 && document.body.classList.contains("mobile")) {
+    else if (window.innerWidth >= breakpoint && document.body.classList.contains("mobile")) {
         CloseDropdown();
         document.body.classList.remove("mobile");
     }
@@ -29,6 +31,8 @@ function Main() {
     for (anchor of mobileLinks) {
         anchor.addEventListener('click', CloseDropdown);
     }
+
+    document.getElementsByTagName("footer")[0].innerHTML = "<p>Copyrigt &copy; " + new Date().getFullYear() + " Steven Aziz. All rights Reserved.</p>";
 
     document.body.classList.remove("fade-out");
 }
