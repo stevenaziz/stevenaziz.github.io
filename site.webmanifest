@@ -3,19 +3,17 @@
     "short_name": "Steven Aziz",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=994",
+            "src": "/android-chrome-192x192.png?v=995",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png?v=994",
+            "src": "/android-chrome-512x512.png?v=995",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#1c1c1c",
-    "background_color": "#1c1c1c",
-    "start_url": "https://www.stevenaziz.com/",
-    "display": "standalone",
-    "orientation": "portrait"
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }
