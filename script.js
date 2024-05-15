@@ -32,7 +32,7 @@ function Main() {
         anchor.addEventListener('click', CloseDropdown);
     }
 
-    document.getElementById("copyright").innerHTML = "Copyrigt &copy; " + new Date().getFullYear() + " Steven Aziz. All rights reserved.";
+    document.getElementById("copyright").innerHTML = "Copyright &copy; " + new Date().getFullYear() + " Steven Aziz. All rights reserved.";
 
     document.body.classList.remove("fade-out");
 }
