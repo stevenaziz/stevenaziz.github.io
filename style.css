@@ -280,6 +280,9 @@ header {
 #education img {
     width: 256px;
 }
+#education>div>div {
+    padding: 24px 24px 24px 0px;
+}
 .projects-grid {
     display: flex;
     justify-content: space-between;
