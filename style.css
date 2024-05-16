@@ -42,7 +42,7 @@
 :root {
     scroll-behavior: smooth;
     background-color: hsl(0, 0%, 0%);
-    font-size: clamp(10px, 2.5vmin, 18px);
+    font-size: clamp(16px, 2vmin, 20px);
 
     --white: hsl(0, 0%, 100%);
     --transWhite: hsla(0, 0%, 100%, 0.8);
@@ -278,7 +278,7 @@ header {
     flex-wrap: wrap;
 }
 #education img {
-    height: 128px;
+    width: 256px;
 }
 .projects-grid {
     display: flex;
