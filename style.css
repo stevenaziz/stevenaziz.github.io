@@ -15,7 +15,7 @@
         transform: translateY(0);
     }
     to {
-        transform: translateY(20px);
+        transform: translateY(24px);
     }
 }
 @media (hover:hover) {
@@ -66,11 +66,12 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0,
     z-index: 9999;
     background-color: hsla(0, 0%, 0%, 0.8);
     height: 48px;
-    -webkit-backdrop-filter: saturate(1.8) blur(20px);
-    backdrop-filter: saturate(1.8) blur(20px);
+    -webkit-backdrop-filter: saturate(2.4) blur(12px);
+    backdrop-filter: saturate(2.4) blur(12px);
     transition: height .4s ease-in-out, background-color .1s ease-in-out .3s;
     overflow: hidden;
 }
