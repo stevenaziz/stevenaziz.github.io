@@ -204,7 +204,7 @@ main {
     align-items: center;
 }
 main>img {
-    width: clamp(140px, 60vw, 240px);
+    width: clamp(160px, 50vw, 320px);
     border-radius: 50%;
     border: 2px solid var(--white);
     filter: brightness(0.9);
@@ -213,7 +213,7 @@ main>img {
 }
 main>h1 {
     color: var(--white);
-    font-size: 6rem;
+    font-size: 5rem;
     margin: 2rem 0 1rem;
     text-align: center;
     line-height: 5rem;
@@ -221,7 +221,7 @@ main>h1 {
 main>h2 {
     color:var(--white);
     opacity: 0.9;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 main>a {
