@@ -34,6 +34,16 @@
     .nav-mobile-menu>a:hover {
         color: var(--white);
     }
+    .brighter-onhover:hover {
+    filter: brightness(1.2);
+    }
+    main>a:hover {
+        opacity: 1;
+    }
+    #certifications-awards>div>a:hover {
+        background-color: var(--blue);
+        color: var(--white);
+    }
 }
 * {
     font-family: "Myriad Pro Text", "Helvetica Neue", "Helvetica";
@@ -45,8 +55,9 @@
     font-size: clamp(16px, 2vmin, 20px);
 
     --white: hsl(0, 0%, 100%);
-    --transWhite: hsla(0, 0%, 100%, 0.8);
+    --transparent-white: hsla(0, 0%, 100%, 0.8);
     --gray: hsl(0, 0%, 30%);
+    --blue: rgb(50, 117, 229);
 }
 body {
     min-width: 320px;
@@ -86,13 +97,13 @@ nav {
 .nav-main>a {
     font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
     font-size: 22px;
-    color: var(--transWhite);
+    color: var(--transparent-white);
     transition: color .3s;
 }
 .nav-desktop>a {
     font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
     font-size: 18px;
-    color: var(--transWhite);
+    color: var(--transparent-white);
     transition: color .3s;
     padding-left: 22px;
 }
@@ -106,7 +117,7 @@ nav {
     display: block;
     width: 24px;
     height: 1px;
-    background-color: var(--transWhite);
+    background-color: var(--transparent-white);
     margin-bottom: 10px;
     transition: background-color .3s, transform .4s;
 }
@@ -114,7 +125,7 @@ nav {
     display: block;
     width: 24px;
     height: 1px;
-    background-color: var(--transWhite);
+    background-color: var(--transparent-white);
     transition: background-color .3s, transform .4s;
 }
 .nav-separator {
@@ -140,7 +151,7 @@ nav {
     display: block;
     text-align: left;
     font-size: 18px;
-    color: var(--transWhite);
+    color: var(--transparent-white);
     padding: 22px 0;
     border-bottom: 1px solid var(--gray);
     transition: color .3s;
@@ -176,9 +187,6 @@ nav {
 .brighter-onhover {
     transition: filter 0.3s ease-in-out;
     cursor: pointer;
-}
-.brighter-onhover:hover {
-    filter: brightness(1.2);
 }
 main {
     box-sizing: border-box;
@@ -222,6 +230,7 @@ main>a {
     opacity: 0.8;
     font-size: 3rem;
     animation: bounce alternate 2s ease-in-out infinite;
+    transition: opacity 0.3s;
 }
 section {
     background-color: hsl(0, 0%, 98%);
@@ -279,14 +288,15 @@ header {
 .projects-grid {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 36px;
 }
 .projects-grid>div {
     background-color: hsl(0, 0%, 94%);
     padding: 24px;
-    margin: 24px;
+    margin: 0;
     border-radius: 12px;
     max-width: 480px;
     flex-grow: 1;
@@ -336,6 +346,12 @@ header {
 }
 #certifications-awards>div>a {
     font-size: 1.1rem;
+    color: var(--blue);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 .skills-grid {
     display: flex;
