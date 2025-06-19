@@ -173,6 +173,13 @@ nav {
     opacity: 1 !important;
     top: 71px !important;
 }
+.brighter-onhover {
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+.brighter-onhover:hover {
+    filter: brightness(1.2);
+}
 main {
     box-sizing: border-box;
     background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.2)), url("images/backdrop.jpg");
@@ -191,7 +198,7 @@ main {
 main>img {
     width: clamp(140px, 60vw, 240px);
     border-radius: 50%;
-    border: 3px solid var(--white);
+    border: 2px solid var(--white);
     filter: brightness(0.9);
     flex-grow: 0;
     flex-shrink: 0;
@@ -235,7 +242,7 @@ header {
     font-size: 1.3rem;
 }
 .position-logo {
-    width: 48px;
+    height: 36px;
 }
 .title {
     margin-bottom: 6px;
@@ -341,11 +348,6 @@ header {
 }
 .skills-grid>img {
     height: clamp(64px, 7vw, 96px);
-    transition: filter 0.3s ease-in-out;
-}
-.skills-grid>img:hover {
-    filter: brightness(1.2);
-    cursor: pointer;
 }
 footer {
     background-color: hsl(0, 0%, 98%);
@@ -354,7 +356,7 @@ footer {
 }
 footer>div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -365,4 +367,7 @@ footer p {
 footer img {
     width: 32px;
     margin-left: 16px;
+}
+footer>div>div>a:first-child>img {
+    margin-left: 0;
 }
