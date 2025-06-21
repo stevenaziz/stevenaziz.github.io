@@ -15,7 +15,7 @@
     <meta name="application-name" content="Steven Aziz">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=995">
-    <meta name="theme-color" content="#000000">
+    <!-- <meta name="theme-color" content="#000000"> -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Steven Aziz</title>
@@ -54,10 +54,10 @@
     <main id="main">
         <img src="images/portrait.png" alt="Portrait photo of Steven Aziz" class="brighter-onhover">
         <h1>Steven Aziz</h1>
-        <h2>Recent Bachelor of Science—<br>Computer Science Graduate<br><br>Seattle Pacific University, 2025<br><small>Seattle, WA</small></h2>
+        <h2>Recent Bachelor of Science,<br>Computer Science Graduate<br><br>Seattle Pacific University, 2025<br>Seattle, WA</h2>
         <a href="#about">&#8595;</a>
     </main>
-    <section id="about" class="about">
+    <section id="about">
         <header>Meet the <b>Developer</b></header>
         <p>
             As a recent Seattle Pacific University graduate with a Bachelor of Science in Computer Science, 
@@ -67,9 +67,9 @@
         </p>
     </section>
     <section id="position">
+        <header>Most Recent Position</header>
         <div>
-            <header>Most Recent Position</header>
-            <img class="position-logo" src="images/apple_logo.png" alt="Apple logo">
+            <h1 class="position-logo"></h1>
             <h1 class="title">Technical Expert</h1>
             <h2 class="company">Apple, Inc.</h2>
             <h3 class="date">May 2022 - April 2025</h3>
@@ -82,10 +82,11 @@
         </div>
     </section>
     <section id="education">
-        <header>Education</header>    
+        <header>Education</header>
         <div>
             <div>
-                <img src="images/spu-logo.png" alt="Seattle Pacific University logo" class="brighter-onhover">
+                <img src="images/spu_logo_light.png" alt="Seattle Pacific University logo" class="brighter-onhover light-only">
+                <img src="images/spu_logo_dark.png" alt="Seattle Pacific University logo" class="brighter-onhover dark-only">
                 <h1>Bachelor of Science,<br>Computer Science</h1>
                 <h3>June 2025</h3>
                 <h3>GPA 3.47</h3>
@@ -111,7 +112,7 @@
                 </div>
                 <p>
                     The Graduation Planning App (GPA) is an exciting new application designed to simplify academic planning and optimize the journey of students at SPU. 
-                    GPA knows about SPU’s course offerings and stores each student’s graduation requirements to automatically suggest a plan for how to take the required courses to graduate. 
+                    GPA knows about SPU's course offerings and stores each student's graduation requirements to automatically suggest a plan for how to take the required courses to graduate. 
                     GPA is highly personalized because it can craft an academic path suited for a particular student based on their preferences. 
                     By automating and refining academic advising, GPA will free up valuable advisor time, increase scheduling accuracy, and enhance student satisfaction at SPU.
                 </p>
@@ -147,20 +148,20 @@
     <section id="certifications-awards">
         <header>Certifications &amp; Awards</header>
         <div>
-        <div>
-        <img src="images/microsoft_logo.png" alt="Microsoft Logo" class="brighter-onhover">
-        <h1>Microsoft Certified: Azure Developer Associate</h1>
-        </div>
-        <h3>Issued June 2025</h3>
-        <p>
-            This certification demonstrates proficiency in designing and building cloud-based applications on Microsoft Azure. 
-            Key competencies include developing compute solutions with Azure App Service, Functions, and containerized apps; 
-            implementing secure and scalable storage with Cosmos DB and Blob Storage; 
-            integrating authentication and authorization using Microsoft Identity and Entra ID; and enabling observability through Application Insights. 
-            Also skilled in building event-driven and message-based architectures using Event Grid, Event Hub, Service Bus, and API Management.
-        </p>
-        <br>
-        <a href="https://learn.microsoft.com/api/credentials/share/en-us/StevenAziz/4F2EDBB3C8822F0C?sharingId=272E275F7F14ADCD" target="_blank">View Certificate</a>
+            <div>
+                <img src="images/microsoft_logo.png" alt="Microsoft Logo" class="brighter-onhover">
+                <h1>Microsoft Certified: Azure Developer Associate</h1>
+            </div>
+            <h3>Issued June 2025</h3>
+            <p>
+                This certification demonstrates proficiency in designing and building cloud-based applications on Microsoft Azure. 
+                Key competencies include developing compute solutions with Azure App Service, Functions, and containerized apps; 
+                implementing secure and scalable storage with Cosmos DB and Blob Storage; 
+                integrating authentication and authorization using Microsoft Identity and Entra ID; and enabling observability through Application Insights. 
+                Also skilled in building event-driven and message-based architectures using Event Grid, Event Hub, Service Bus, and API Management.
+            </p>
+            <br>
+            <a href="https://learn.microsoft.com/api/credentials/share/en-us/StevenAziz/4F2EDBB3C8822F0C?sharingId=272E275F7F14ADCD" target="_blank">View Certificate</a>
         </div>
     </section>
     <section id="skills-languages">
@@ -184,14 +185,23 @@
         <div>
             <p id="copyright"></p>
             <div>
-                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="brighter-onhover">
-                    <img src="images/linkedin_bug.png" alt="LinkedIn logo">
+                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="brighter-onhover light-only">
+                    <img src="images/in_light.png" alt="LinkedIn logo">
                 </a>
-                <a href="https://github.com/stevenaziz" target="_blank" class="brighter-onhover">
-                    <img src="images/github_mark.png" alt="GitHub logo">
+                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="brighter-onhover dark-only">
+                    <img src="images/in_dark.png" alt="LinkedIn logo">
                 </a>
-                <a href="mailto:hello@stevenaziz.com" target="_blank" class="brighter-onhover">
-                    <img src="images/email.png" alt="email icon">
+                <a href="https://github.com/stevenaziz" target="_blank" class="brighter-onhover light-only">
+                    <img src="images/github_light.png" alt="GitHub logo">
+                </a>
+                <a href="https://github.com/stevenaziz" target="_blank" class="brighter-onhover dark-only">
+                    <img src="images/github_dark.png" alt="GitHub logo">
+                </a>
+                <a href="mailto:hello@stevenaziz.com" target="_blank" class="brighter-onhover light-only">
+                    <img src="images/mail_light.png" alt="email">
+                </a>
+                <a href="mailto:hello@stevenaziz.com" target="_blank" class="brighter-onhover dark-only">
+                    <img src="images/mail_dark.png" alt="email">
                 </a>
             </div>
         </div>
