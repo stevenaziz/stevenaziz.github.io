@@ -1,3 +1,2 @@
-# Hey There, Steven Here.
-### You've arrived at my personal website &amp; portfolio.
-### Visit my website at [stevenaziz.com](stevenaziz.com).
+# Hey There, Welcome to Steven Aziz's Professional Portfolio
+### Visit the website at [stevenaziz.com](stevenaziz.com).

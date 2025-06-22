@@ -15,12 +15,12 @@
     <meta name="application-name" content="Steven Aziz">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=995">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="light-dark(#ffffff, #000000)">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Steven Aziz</title>
 </head>
-<body class="fade-out" onload="main()" onresize="checkViewport()">
+<body onload="main()" onresize="checkViewport()">
     <nav>
         <div class="nav-main">
             <a href="#main">Steven Aziz</a>
@@ -52,9 +52,9 @@
         </div>
     </nav>
     <main id="main">
-        <img src="images/portrait.png" alt="Portrait photo of Steven Aziz" class="brighter-onhover">
+        <img src="images/portrait.png" alt="Steven Aziz" class="brighter-onhover">
         <h1>Steven Aziz</h1>
-        <h2>Recent Bachelor of Science,<br>Computer Science Graduate<br><br>Seattle Pacific University, 2025<br>Seattle, WA</h2>
+        <h2>Bachelor of Science,<br>Computer Science Graduate<br><br>Seattle Pacific University, 2025<br>Seattle, WA</h2>
         <a href="#about">&#8595;</a>
     </main>
     <section id="about">
@@ -85,8 +85,8 @@
         <header>Education</header>
         <div>
             <div>
-                <img src="images/spu_logo_light.png" alt="Seattle Pacific University logo" class="brighter-onhover light-only">
-                <img src="images/spu_logo_dark.png" alt="Seattle Pacific University logo" class="brighter-onhover dark-only">
+                <img src="images/spu_light.png" alt="Seattle Pacific University logo" class="brighter-onhover light-only">
+                <img src="images/spu_dark.png" alt="Seattle Pacific University logo" class="brighter-onhover dark-only">
                 <h1>Bachelor of Science,<br>Computer Science</h1>
                 <h3>June 2025</h3>
                 <h3>GPA 3.47</h3>
@@ -106,9 +106,9 @@
                 <img src="images/gpa_logo.png" alt="Expression simplifier code snippet">
                 <h1>The Graduation Planning App (GPA)</h1>
                 <div class="project-tags">
-                    <p class="project-type">Team of 5</p>
-                    <p class="project-type">Software Developer</p>
-                    <p class="project-type">People Operations Planner (POP)</p>
+                    <span class="project-type">Team of 5</span>
+                    <span class="project-type">Backend/Database Developer</span>
+                    <span class="project-type">People Operations Planner (POP)</span>
                 </div>
                 <p>
                     The Graduation Planning App (GPA) is an exciting new application designed to simplify academic planning and optimize the journey of students at SPU. 
@@ -121,8 +121,8 @@
                 <img src="images/expression_simplifier_snippet.png" alt="Expression simplifier code snippet">
                 <h1>Expression Simplifer</h1>
                 <div class="project-tags">
-                    <p class="project-type">Individual</p>
-                    <p class="project-type">Data Structures I</p>
+                    <span class="project-type">Individual</span>
+                    <span class="project-type">Data Structures I</span>
                 </div>
                 <p>
                     Using <b>C++</b>, I implemented a postfix expression simplifier that reads in an algebraic expression written in postfix 
@@ -134,8 +134,8 @@
                 <img src="images/list_webapp_snippet.png" alt="Simple list web app code snippet">
                 <h1>Simple List Web App</h1>
                 <div class="project-tags">
-                    <p class="project-type">Team of 3</p>
-                    <p class="project-type">Netcentric Computing</p>
+                    <span class="project-type">Team of 3</span>
+                    <span class="project-type">Netcentric Computing</span>
                 </div>
                 <p>
                     Using <b>HTML, CSS, JavaScript, and Node.js</b>, my group implemented both front-end and back-end components of a simple list web app that has
@@ -167,18 +167,20 @@
     <section id="skills-languages">
         <header>Skills &amp; Languages</header>
         <div class="skills-grid">
-            <img src="images/azure_logo.png" alt="Microsoft Azure logo" class="brighter-onhover">
-            <img src="images/python_logo.png" alt="Python logo" class="brighter-onhover">
-            <img src="images/rust_logo.png" alt="Rust logo"class="brighter-onhover">
-            <img src="images/c_logo.png" alt="C logo" class="brighter-onhover">
-            <img src="images/cpp_logo.png" alt="C++ logo" class="brighter-onhover">
-            <img src="images/javascript_logo.png" alt="JavaScript logo" class="brighter-onhover">
-            <img src="images/mysql_logo.png" alt="MySQL logo" class="brighter-onhover">
-            <img src="images/nodejs_logo.svg" alt="Node.js logo" class="brighter-onhover">
-            <img src="images/prolog_logo.png" alt="SWI-Prolog logo" class="brighter-onhover">
-            <img src="images/scheme_logo.jpg" alt="MIT-Scheme logo" class="brighter-onhover">
-            <img src="images/html_logo.png" alt="HTML logo" class="brighter-onhover">
-            <img src="images/css_logo.png" alt="CSS logo" class="brighter-onhover">
+            <img src="images/azure_logo.png" alt="Microsoft Azure" class="brighter-onhover">
+            <img src="images/python_logo.png" alt="Python" class="brighter-onhover">
+            <img src="images/rust_logo.png" alt="Rust"class="brighter-onhover">
+            <img src="images/c_logo.png" alt="C" class="brighter-onhover">
+            <img src="images/cpp_logo.png" alt="C++" class="brighter-onhover">
+            <img src="images/javascript_logo.png" alt="JavaScript" class="brighter-onhover">
+            <img src="images/mysql_logo.png" alt="MySQL" class="brighter-onhover">
+            <img src="images/nodejs_logo.svg" alt="Node.js" class="brighter-onhover">
+            <img src="images/assembly_logo.png" alt="Assembly Language" class="brighter-onhover">
+            <img src="images/prolog_logo.png" alt="SWI-Prolog" class="brighter-onhover">
+            <img src="images/scheme_logo.jpg" alt="MIT-Scheme" class="brighter-onhover">
+            <img src="images/html_logo.png" alt="HTML" class="brighter-onhover">
+            <img src="images/css_logo.png" alt="CSS" class="brighter-onhover">
+            <img src="images/json_logo.png" alt="JSON" class="brighter-onhover">
         </div>
     </section>
     <footer id="contact">
@@ -186,22 +188,22 @@
             <p id="copyright"></p>
             <div>
                 <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="brighter-onhover light-only">
-                    <img src="images/in_light.png" alt="LinkedIn logo">
+                    <img src="images/in_light.png" alt="LinkedIn">
                 </a>
                 <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="brighter-onhover dark-only">
-                    <img src="images/in_dark.png" alt="LinkedIn logo">
+                    <img src="images/in_dark.png" alt="LinkedIn">
                 </a>
                 <a href="https://github.com/stevenaziz" target="_blank" class="brighter-onhover light-only">
-                    <img src="images/github_light.png" alt="GitHub logo">
+                    <img src="images/github_light.png" alt="GitHub">
                 </a>
                 <a href="https://github.com/stevenaziz" target="_blank" class="brighter-onhover dark-only">
-                    <img src="images/github_dark.png" alt="GitHub logo">
+                    <img src="images/github_dark.png" alt="GitHub">
                 </a>
                 <a href="mailto:hello@stevenaziz.com" target="_blank" class="brighter-onhover light-only">
-                    <img src="images/mail_light.png" alt="email">
+                    <img src="images/mail_light.png" alt="Email">
                 </a>
                 <a href="mailto:hello@stevenaziz.com" target="_blank" class="brighter-onhover dark-only">
-                    <img src="images/mail_dark.png" alt="email">
+                    <img src="images/mail_dark.png" alt="Email">
                 </a>
             </div>
         </div>

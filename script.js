@@ -1,9 +1,9 @@
-// Toggles the mobile nav dropdown
+// Toggles the mobile navigation bar dropdown
 function toggleDropdown() {
     document.body.classList.toggle("fullscreen-nav");
 }
 
-// Checks whether the mobile nav dropdown is open and closes it
+// Closes the mobile navigation bar dropdown
 function closeDropdown() {
     if (document.body.classList.contains("fullscreen-nav")) {
         toggleDropdown();
@@ -27,13 +27,16 @@ function checkViewport() {
 function main() {
     checkViewport();
     
+    // selects all navigation bar links
     const mobileLinks = document.querySelectorAll("nav>div>a");
 
+    // adds event listener to the navigation bar links -> close dropdown when clicked
     for (anchor of mobileLinks) {
         anchor.addEventListener('click', closeDropdown);
     }
 
+    // footer copyright text
     document.getElementById("copyright").innerHTML = "Copyright &copy; " + new Date().getFullYear() + " Steven Aziz. All rights reserved.";
 
-    document.body.classList.remove("fade-out");
+    document.body.style.opacity = "1";
 }
