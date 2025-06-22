@@ -408,6 +408,8 @@ footer>div {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    row-gap: 12px;
+    column-gap: 24px;
 }
 footer p {
     margin: 0;
