@@ -374,6 +374,7 @@ header {
     font-size: 1.5rem;
     margin: 0 0 0 16px;
     color: light-dark(var(--gray30), var(--gray70));
+    text-align: left;
 }
 #certifications-awards>div>h3 {
     font-size: 1.2rem;
@@ -424,5 +425,8 @@ footer img {
     margin-left: 16px;
 }
 footer>div>div>a:first-child img {
+    margin-left: 0;
+}
+footer>div>div>a:nth-child(2) img {
     margin-left: 0;
 }
