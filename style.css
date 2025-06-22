@@ -121,12 +121,14 @@ nav {
     font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
     font-size: 22px;
     color: light-dark(var(--transparent-black), var(--transparent-white));
+    background-color: transparent;
     transition: color .3s;
 }
 .nav-desktop>a {
     font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
     font-size: 18px;
     color: light-dark(var(--transparent-black), var(--transparent-white));
+    background-color: transparent;
     transition: color .3s;
     padding-left: 22px;
 }
@@ -138,6 +140,7 @@ nav {
     width: 24px;
     height: 12px;
     cursor: pointer;
+    background-color: transparent;
 }
 .bar1, .bar2 {
     display: block;
@@ -175,6 +178,7 @@ nav {
     text-align: left;
     font-size: 18px;
     color: light-dark(var(--transparent-black), var(--transparent-white));
+    background-color: transparent;
     padding: 24px 0;
     border-bottom: 1px solid light-dark(var(--gray70), var(--gray30));
     transition: color .3s;
