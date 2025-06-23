@@ -55,7 +55,7 @@
     <main id="main">
         <img src="images/portrait.png" alt="Steven Aziz" class="brighter-onhover">
         <h1>Steven Aziz</h1>
-        <h2>Bachelor of Science,<br>Computer Science Graduate<br><br>Seattle Pacific University, 2025<br>Seattle, WA</h2>
+        <h2>Bachelor of Science,<br>Computer Science Graduate<br><br>Seattle Pacific University<br>Seattle, WA</h2>
         <a href="#about">&#8595;</a>
     </main>
     <section id="about">
@@ -63,7 +63,7 @@
         <p>
             As a recent Seattle Pacific University graduate with a Bachelor of Science in Computer Science, 
             I am actively seeking my first software development role in the industry. 
-            Feel free to to connect with me by clicking the mail icon at the bottom of the page.<br><br>
+            Feel free to to connect with me via LinkedIn or e-mail.<br><br>
             Thank you.
         </p>
     </section>
@@ -100,48 +100,102 @@
             </div>
         </div>
     </section>
-    <section id="projects" class="projects">
+    <section id="projects">
         <header>Projects</header>
-        <div class="projects-grid">
+        <div>
             <div>
-                <img src="images/gpa_logo.png" alt="Expression simplifier code snippet">
+                <img src="images/gpa_logo.png" alt="GPA">
                 <h1>The Graduation Planning App (GPA)</h1>
-                <div class="project-tags">
-                    <span class="project-type">Team of 5</span>
-                    <span class="project-type">Backend/Database Developer</span>
-                    <span class="project-type">People Operations Planner (POP)</span>
+                <div>
+                    <span>Team of 5</span>
+                    <span>Web App</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MySQL</span>
                 </div>
                 <p>
-                    The Graduation Planning App (GPA) is an exciting new application designed to simplify academic planning and optimize the journey of students at SPU. 
-                    GPA knows about SPU's course offerings and stores each student's graduation requirements to automatically suggest a plan for how to take the required courses to graduate. 
-                    GPA is highly personalized because it can craft an academic path suited for a particular student based on their preferences. 
-                    By automating and refining academic advising, GPA will free up valuable advisor time, increase scheduling accuracy, and enhance student satisfaction at SPU.
+                    The Graduation Planning App (GPA) is a web application designed to simplify academic planning for students at SPU. 
+                    Thanks to extensive web scraping and custom parsing, GPA is able to collect information about each student's transcript and graduation requirements in order to offer a customized course plan. 
+                    As a backend/database developer, I designed and implemented the MySQL database along with all of the database APIs. 
+                    I also served as the People Operations Planner (POP) for the project, ensuring that the team was organized and on track to meet deadlines.
                 </p>
             </div>
             <div>
-                <img src="images/expression_simplifier_snippet.png" alt="Expression simplifier code snippet">
-                <h1>Expression Simplifer</h1>
-                <div class="project-tags">
-                    <span class="project-type">Individual</span>
-                    <span class="project-type">Data Structures I</span>
+                <img src="images/simple_todo_list.png" alt="Simple To-Do List">
+                <h1>Simple To-Do List</h1>
+                <div>
+                    <span>Team of 3</span>
+                    <span>Web App</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MongoDB</span>
                 </div>
                 <p>
-                    Using <b>C++</b>, I implemented a postfix expression simplifier that reads in an algebraic expression written in postfix 
-                    and turns it into a binary expression tree. The simplifier recognizes both numbers and variables, and can perform basic operations 
-                    such as + (addition), - (subtraction), and *(multiplication).
+                    By completing this simple to-do list project, I learned how to use Express and MongoDB to create a full-stack web application.
+                    The project involved creating a user interface with HTML, CSS, and JavaScript, and implementing a backend server using Node.js and Express.
+                    The application allows users to add, edit, and delete tasks, and stores the data in a MongoDB database.
+                    This project helped me gain practical experience in web development and understand the full stack development process.
                 </p>
             </div>
             <div>
-                <img src="images/list_webapp_snippet.png" alt="Simple list web app code snippet">
-                <h1>Simple List Web App</h1>
-                <div class="project-tags">
-                    <span class="project-type">Team of 3</span>
-                    <span class="project-type">Netcentric Computing</span>
+                <img src="images/rust_logo.png" alt="">
+                <h1>Lexical & Syntax Analyzer</h1>
+                <div>
+                    <span>Rust</span>
                 </div>
                 <p>
-                    Using <b>HTML, CSS, JavaScript, and Node.js</b>, my group implemented both front-end and back-end components of a simple list web app that has
-                    the ability to add data to a simulated database via a JSON file, remove data from the database, and load the data each time the page 
-                    loads. The Node.js module Express was used to support the backend.
+                    Using Rust, I implemented a lexical and syntax analyzer for a simple programming language. 
+                    The analyzer reads in source code, tokenizes it, parses it, and, optionally, generates equivalent Scheme or Prolog code.
+                    The lexer and parser are designed to handle various syntax rules, such as operator precedence and parentheses matching. 
+                    The project also includes error handling to report syntax errors in the source code.
+                    The project demonstrates my understanding of compiler design principles and proficiency in Rust.
+                </p>
+            </div>
+            <div>
+                <img src="images/maze_solver.png" alt="Maze Solver">
+                <h1>Maze Solver</h1>
+                <div>
+                    <span>C++</span>
+                </div>
+                <p>
+                    The Maze Solver is a C++ program that implements a depth-first search algorithm to find a valid path through a maze. 
+                    The program reads in a maze from a text file, and uses recursion to explore all possible paths through the maze, marking visited cells and backtracking when necessary. 
+                    The program outputs the solution path, if one exists, and displays a live animation as it attempts to solve the maze.
+                </p>
+            </div>
+            <div>
+                <img src="images/adventurebot.png" alt="AdventureBot">
+                <h1>AdventureBot</h1>
+                <div>
+                    <span>Team of 4</span>
+                    <span>Embedded Systems</span>
+                    <span>MicroPython</span>
+                    <span>Raspberry Pi Pico</span>
+                </div>
+                <p>
+                    AdventureBot is an RC car that uses a Raspberry Pi Pico coupled with an ultrasonic sensor, speaker, and a Bluetooth module to enable a mobile-driven, surroundings-aware, playful user experience. 
+                    AdventureBot avoids obstacles and plays music through its speakers based on its state. 
+                    As a developer and the lead hardware engineer, I sourced the parts for AdventureBot, constructed the hardware, and performed tests and troubleshooting on MicroPython modules supplied by my team members.
+                </p>
+            </div>
+            <div>
+                <img src="images/backdrop.jpg" alt="">
+                <h1>Personal Portfolio Website</h1>
+                <div>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>GitHub Pages</span>
+                </div>
+                <p>
+                    This personal portfolio website is built using HTML, CSS, and JavaScript. 
+                    It showcases my projects, skills, and experience in a clean and responsive design. 
+                    The website is designed to be accessible and user-friendly, providing a platform for potential employers to learn more about my work. 
+                    This webiste is hosted on GitHub Pages, and the source code is viewable from my GitHub profile.
                 </p>
             </div>
         </div>
@@ -167,7 +221,7 @@
     </section>
     <section id="skills-languages">
         <header>Skills &amp; Languages</header>
-        <div class="skills-grid">
+        <div>
             <div>
                 <img src="images/azure_logo.png" alt="Microsoft Azure" class="brighter-onhover">
                 <p>Microsoft Azure</p>
@@ -224,29 +278,39 @@
                 <img src="images/json_logo.png" alt="JSON" class="brighter-onhover">
                 <p>JSON</p>
             </div>
+            <div>
+                <img src="images/scrum.png" alt="SCRUM" class="brighter-onhover">
+                <p>SCRUM</p>
+            </div>
         </div>
     </section>
     <footer id="contact">
         <div>
             <p id="copyright"></p>
             <div>
-                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="brighter-onhover light-only">
+                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="light-only">
                     <img src="images/in_light.png" alt="LinkedIn">
                 </a>
-                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="brighter-onhover dark-only">
+                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="dark-only">
                     <img src="images/in_dark.png" alt="LinkedIn">
                 </a>
-                <a href="https://github.com/stevenaziz" target="_blank" class="brighter-onhover light-only">
+                <a href="https://github.com/stevenaziz" target="_blank" class="light-only">
                     <img src="images/github_light.png" alt="GitHub">
                 </a>
-                <a href="https://github.com/stevenaziz" target="_blank" class="brighter-onhover dark-only">
+                <a href="https://github.com/stevenaziz" target="_blank" class="dark-only">
                     <img src="images/github_dark.png" alt="GitHub">
                 </a>
-                <a href="mailto:hello@stevenaziz.com" target="_blank" class="brighter-onhover light-only">
+                <a href="mailto:hello@stevenaziz.com" target="_blank" class="light-only">
                     <img src="images/mail_light.png" alt="Email">
                 </a>
-                <a href="mailto:hello@stevenaziz.com" target="_blank" class="brighter-onhover dark-only">
+                <a href="mailto:hello@stevenaziz.com" target="_blank" class="dark-only">
                     <img src="images/mail_dark.png" alt="Email">
+                </a>
+                <a href="Steven_Aziz_Official_Resume.pdf" target="_blank" class="light-only">
+                    <img src="images/resume_light.png" alt="Resumé">
+                </a>
+                <a href="Steven_Aziz_Official_Resume.pdf" target="_blank" class="dark-only">
+                    <img src="images/resume_dark.png" alt="Resumé">
                 </a>
             </div>
         </div>

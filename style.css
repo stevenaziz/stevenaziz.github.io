@@ -315,7 +315,7 @@ header {
 #education>div>div {
     padding: 24px 24px 24px 0;
 }
-.projects-grid {
+#projects>div {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -323,7 +323,7 @@ header {
     flex-direction: row;
     gap: 36px;
 }
-.projects-grid>div {
+#projects>div>div {
     background-color: light-dark(hsl(0, 0%, 94%), hsl(0, 0%, 12%));
     padding: 24px;
     margin: 0;
@@ -333,11 +333,11 @@ header {
     flex-shrink: 1;
     flex-basis: 320px;
 }
-.projects-grid img {
+#projects img {
     width: 100%;
     border-radius: 12px;
 }
-.project-tags {
+#projects>div>div>div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -345,7 +345,7 @@ header {
     align-items: start;
     gap: 6px;
 }
-.project-type {
+#projects span {
     background-color: light-dark(hsl(0, 0%, 88%), hsl(0, 0%, 18%));
     border-radius: 20px;
     padding: 6px 12px;
@@ -386,7 +386,7 @@ header {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-.skills-grid {
+#skills-languages>div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -395,7 +395,7 @@ header {
     row-gap: 24px;
     column-gap: 36px;
 }
-.skills-grid>div {
+#skills-languages>div>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -403,10 +403,10 @@ header {
     gap: 10px;
     width: min-content;
 }
-.skills-grid img {
+#skills-languages img {
     height: clamp(64px, 7vw, 96px);
 }
-.skills-grid p {
+#skills-languages p {
     display: inline-block;
     margin: 0;
     font-size: 1rem;
@@ -432,13 +432,16 @@ footer p {
     color: light-dark(hsl(0, 0%, 39%), hsl(0, 0%, 61%));
     text-align: left;
 }
-footer img {
+footer>div>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+footer a {
     height: 32px;
-    margin-left: 16px;
 }
-footer>div>div>a:first-child img {
-    margin-left: 0;
-}
-footer>div>div>a:nth-child(2) img {
-    margin-left: 0;
+footer img {
+    height: 100%;
 }
