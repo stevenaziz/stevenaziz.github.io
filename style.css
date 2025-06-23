@@ -433,7 +433,7 @@ footer p {
     text-align: left;
 }
 footer img {
-    width: 32px;
+    height: 32px;
     margin-left: 16px;
 }
 footer>div>div>a:first-child img {
