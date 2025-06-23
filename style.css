@@ -102,9 +102,9 @@ nav {
     height: 48px;
     padding: 0 36px;
     border-bottom: 1px solid light-dark(hsl(0, 0%, 80%), hsl(0, 0%, 20%));
-    background-color: light-dark(var(--transparent-white), var(--transparent-black));
-    -webkit-backdrop-filter: saturate(2.4) blur(10px);
-    backdrop-filter: saturate(2.4) blur(10px);
+    background-color: light-dark(hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 0%, 0.6));
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     transition: height .4s ease-in-out, background-color .1s ease-in-out .3s;
     overflow: hidden;
 }
@@ -395,8 +395,23 @@ header {
     row-gap: 24px;
     column-gap: 36px;
 }
-.skills-grid>img {
+.skills-grid>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: min-content;
+}
+.skills-grid img {
     height: clamp(64px, 7vw, 96px);
+}
+.skills-grid p {
+    display: inline-block;
+    margin: 0;
+    font-size: 1rem;
+    color: light-dark(var(--gray30), var(--gray70));
+    text-align: center;
 }
 footer {
     background-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 8%));
