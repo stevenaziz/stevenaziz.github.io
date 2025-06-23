@@ -430,6 +430,7 @@ footer>div {
 footer p {
     margin: 0;
     color: light-dark(hsl(0, 0%, 39%), hsl(0, 0%, 61%));
+    text-align: left;
 }
 footer img {
     width: 32px;

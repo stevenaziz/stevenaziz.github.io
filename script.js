@@ -36,7 +36,7 @@ function main() {
     }
 
     // footer copyright text
-    document.getElementById("copyright").innerHTML = "Copyright &copy; 2018-" + new Date().getFullYear() + " Steven Aziz. All rights reserved.";
+    document.getElementById("copyright").innerHTML = "Copyright &copy; 2018 - " + new Date().getFullYear() + " Steven Aziz. All rights reserved.";
 
     document.body.style.opacity = "1";
 }
