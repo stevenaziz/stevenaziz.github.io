@@ -1,14 +1,9 @@
  /* Import fonts */
-@font-face {
-    font-family: 'Myriad Pro Text';
-    src: url("fonts/Myriad Pro - Text.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Myriad Pro Thin';
-    src: url("fonts/Myriad Pro - Thin.ttf");
-    font-display: swap;
-}
+ @font-face {
+    font-family: 'SF Pro';
+    src: url(fonts/SF-Pro.ttf) format('truetype');
+    font-display: block;
+ }
 /* animation for arrow-down */
 @keyframes bounce {
     from {
@@ -62,11 +57,17 @@
     }
 }
 * {
-    font-family: "Myriad Pro Text", "Helvetica Neue", "Helvetica";
+    font-family: "SF Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
     text-decoration: none;
 }
 header, h1, h2, h3, h4, h5, h6, p {
     color: light-dark(black, white);
+}
+h1 {
+    font-weight: 400;
+}
+p {
     text-align: justify;
 }
 :root {
@@ -119,14 +120,14 @@ nav {
     margin: 0 auto;
 }
 .nav-main>a {
-    font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 400;
     color: light-dark(var(--transparent-black), var(--transparent-white));
     transition: color .3s;
 }
 .nav-desktop>a {
-    font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 200;
     color: light-dark(var(--transparent-black), var(--transparent-white));
     transition: color .3s;
     padding-left: 22px;
@@ -171,10 +172,9 @@ nav {
     transition: opacity .3s ease-in-out .1s, top .3s ease-in-out .1s;
 }
 .nav-mobile-menu>a {
-    font-family: "Myriad Pro Thin", "Helvetica Neue", "Helvetica";
+    font-weight: 200;
     display: block;
-    text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     color: light-dark(var(--transparent-black), var(--transparent-white));
     padding: 24px 0;
     border-bottom: 1px solid light-dark(var(--gray70), var(--gray30));
@@ -247,6 +247,7 @@ main>h1 {
     line-height: 5rem;
 }
 main>h2 {
+    font-weight: 400;
     color:white;
     opacity: 0.9;
     font-size: 1.6rem;
@@ -272,31 +273,34 @@ section>*, footer>* {
 header {
     padding-bottom: 24px;
     font-size: 3rem;
-    text-align: left;
+    font-weight: 500;
 }
 #about>p {
-    text-align: left;
     font-size: 1.3rem;
 }
 .position-logo {
-    font-size: 36px;
+    font-size: 3rem;
     margin: 24px 0 0;
 }
 .title {
     margin: 24px 0 0;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 .company {
     margin: 0;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .date {
-    margin: 24px 0 0;;
-    font-weight: 200;
+    margin: 24px 0 0;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 .city {
     margin: 0;
-    font-weight: 200;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 .description {
     margin: 24px 0 0;
@@ -365,13 +369,12 @@ header {
 }
 #certifications-awards h1 {
     font-size: 1.5rem;
+    font-weight: 500;
     margin: 0;
     color: light-dark(var(--gray30), var(--gray70));
-    text-align: left;
 }
 #certifications-awards h3 {
-    font-size: 1.2rem;
-    font-weight: normal;
+    font-size: 1.1rem;
     margin: 0;
 }
 #certifications-awards>div>p {

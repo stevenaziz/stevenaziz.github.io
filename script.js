@@ -12,7 +12,7 @@ function closeDropdown() {
 
 // Applies mobile class to body if viewport is too small
 function checkViewport() {
-    let breakpoint = 996; // Breakpoint for mobile view of navigation
+    let breakpoint = 1068; // Breakpoint for mobile view of navigation
 
     if (window.innerWidth < breakpoint && !document.body.classList.contains("mobile")) {
         document.body.classList.add("mobile");
