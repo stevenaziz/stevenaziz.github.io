@@ -69,6 +69,7 @@ h1 {
 }
 p {
     text-align: justify;
+    line-height: 1.25;
 }
 :root {
     color-scheme: light dark;
@@ -104,8 +105,8 @@ nav {
     padding: 0 36px;
     border-bottom: 1px solid light-dark(hsl(0, 0%, 80%), hsl(0, 0%, 20%));
     background-color: light-dark(hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 0%, 0.6));
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
     transition: height .4s ease-in-out, background-color .1s ease-in-out .3s;
     overflow: hidden;
 }
