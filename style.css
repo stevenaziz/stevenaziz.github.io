@@ -56,32 +56,49 @@
         display: initial !important;
     }
 }
-* {
-    font-family: "SF Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-}
-header, h1, h2, h3, h4, h5, h6, p {
-    color: light-dark(black, white);
-}
-h1 {
-    font-weight: 400;
-}
-p {
-    text-align: justify;
-    line-height: 1.25;
-}
 :root {
     color-scheme: light dark;
     scroll-behavior: smooth;
     background-color: light-dark(white, black);
     font-size: clamp(16px, 2vmin, 20px);
 
+    
+    --bg-light: hsl(0, 0%, 98%);
+    --bg2-light: hsl(0, 0%, 94%);
+    --bg-dark: hsl(0, 0%, 8%);
+    --bg2-dark: hsl(0, 0%, 12%);
+    --border-light: hsl(0, 0%, 100%);
+    --border-dark: hsl(0, 0%, 10%);
+    --highlight-light: hsl(0, 0%, 88%);
+    --highlight-dark: hsl(0, 0%, 18%);
+    --heading-light: hsl(0, 0%, 5%);
+    --heading2-light: hsl(0, 0%, 10%);
+    --heading-dark: hsl(0, 0%, 95%);
+    --heading2-dark: hsl(0, 0%, 90%);
+    --text-light: hsl(0, 0%, 20%);
+    --text-dark: hsl(0, 0%, 80%);
     --transparent-white: hsla(0, 0%, 100%, 0.8);
     --transparent-black: hsla(0, 0%, 0%, 0.8);
-    --gray30: hsl(0, 0%, 30%);
-    --gray70: hsl(0, 0%, 70%);
     --blue: rgb(50, 117, 229);
+}
+* {
+    font-family: "SF Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+header {
+    color: light-dark(var(--heading-light), var(--heading-dark));
+}
+h1, h2, h3, h4, h5, h6 {
+    color: light-dark(var(--heading2-light), var(--heading2-dark));
+}
+h1 {
+    font-weight: 400;
+}
+p, span {
+    color: light-dark(var(--text-light), var(--text-dark));
+    text-align: justify;
+    line-height: 1.25;
 }
 body {
     min-width: 320px;
@@ -104,7 +121,7 @@ nav {
     height: 48px;
     padding: 0 36px;
     border-bottom: 1px solid light-dark(hsl(0, 0%, 80%), hsl(0, 0%, 20%));
-    background-color: light-dark(hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 0%, 0.6));
+    background-color: light-dark(hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 0%, 0.5));
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     transition: height .4s ease-in-out, background-color .1s ease-in-out .3s;
@@ -157,7 +174,7 @@ nav {
     position: absolute;
     left: 0;
     right: 0;
-    background-color: light-dark(var(--gray70), var(--gray30));
+    background-color: light-dark(var(--text-dark), var(--text-light));
     opacity: 0.2;
     transition: opacity .3s ease-in-out .1s, margin .3s ease-in-out .1s;
 }
@@ -178,7 +195,7 @@ nav {
     font-size: 16px;
     color: light-dark(var(--transparent-black), var(--transparent-white));
     padding: 24px 0;
-    border-bottom: 1px solid light-dark(var(--gray70), var(--gray30));
+    border-bottom: 1px solid light-dark(var(--text-dark), var(--text-light));
     transition: color .3s;
 }
 .nav-mobile-menu>a:last-child {
@@ -241,7 +258,7 @@ main>img {
     border: 3px solid white;
 }
 main>h1 {
-    color: white;
+    color: var(--heading-dark);
     font-size: 5rem;
     margin: 2rem 0 1rem;
     text-align: center;
@@ -249,22 +266,22 @@ main>h1 {
 }
 main>h2 {
     font-weight: 400;
-    color:white;
+    color:var(--heading2-dark);
     opacity: 0.9;
     font-size: 1.6rem;
     text-align: center;
 }
 main>a {
     margin: 2rem 0;
-    color: white;
+    color: var(--transparent-white);
     opacity: 0.8;
     font-size: 3rem;
     animation: bounce alternate 2s ease-in-out infinite;
     transition: opacity 0.3s;
 }
 section {
-    background-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 8%));
-    border-top: 10px solid light-dark(white, hsl(0, 0%, 10%));
+    background-color: light-dark(var(--bg-light), var(--bg-dark));
+    border-top: 10px solid light-dark(var(--border-light), var(--border-dark));
     padding: 72px 36px;
 }
 section>*, footer>* {
@@ -313,12 +330,16 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 36px;
 }
 #education img {
     width: 256px;
 }
-#education>div>div {
-    padding: 24px 24px 24px 0;
+#education h1 {
+    font-size: 1.5rem;
+}
+#education p {
+    font-size: 1.25rem;
 }
 #projects>div {
     display: flex;
@@ -329,7 +350,7 @@ header {
     gap: 36px;
 }
 #projects>div>div {
-    background-color: light-dark(hsl(0, 0%, 94%), hsl(0, 0%, 12%));
+    background-color: light-dark(var(--bg2-light), var(--bg2-dark));
     padding: 24px;
     margin: 0;
     border-radius: 12px;
@@ -351,7 +372,7 @@ header {
     gap: 6px;
 }
 #projects span {
-    background-color: light-dark(hsl(0, 0%, 88%), hsl(0, 0%, 18%));
+    background-color: light-dark(var(--highlight-light), var(--highlight-dark));
     border-radius: 20px;
     padding: 6px 12px;
     margin: 0;
@@ -372,16 +393,16 @@ header {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0;
-    color: light-dark(var(--gray30), var(--gray70));
 }
 #certifications-awards h3 {
+    text-decoration: underline;
     font-size: 1.1rem;
     margin: 0;
 }
 #certifications-awards>div>p {
     font-size: 1.1rem;
 }
-#certifications-awards>div>a {
+#certifications-awards a {
     font-size: 1.1rem;
     color: var(--blue);
     padding: 8px 16px;
@@ -414,12 +435,11 @@ header {
     display: inline-block;
     margin: 0;
     font-size: 1rem;
-    color: light-dark(var(--gray30), var(--gray70));
     text-align: center;
 }
 footer {
-    background-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 8%));
-    border-top: 12px solid light-dark(white, hsl(0, 0%, 10%));
+    background-color: light-dark(var(--bg-light), var(--bg-dark));
+    border-top: 12px solid light-dark(var(--border-light), var(--border-dark));
     padding: 18px 36px;
 }
 footer>div {
@@ -433,7 +453,6 @@ footer>div {
 }
 footer p {
     margin: 0;
-    color: light-dark(hsl(0, 0%, 39%), hsl(0, 0%, 61%));
     text-align: left;
 }
 footer>div>div {
