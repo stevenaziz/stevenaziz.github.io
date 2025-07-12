@@ -28,10 +28,10 @@
             <span class="nav-desktop">
                 <a href="#about">About</a>
                 <a href="#position">Position</a>
-                <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
-                <a href="#certifications-awards">Certifications &amp; Awards</a>
-                <a href="#skills-languages">Skills &amp; Languages</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#skills">Technical Skills</a>
                 <a href="#contact">Contact</a>
                 <a href="Steven_Aziz_Official_Resume.pdf" target="_blank">Resumé</a>
             </span>
@@ -44,10 +44,10 @@
         <div class="nav-mobile-menu">
             <a href="#about">About</a>
             <a href="#position">Position</a>
-            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
-            <a href="#certifications-awards">Certifications &amp; Awards</a>
-            <a href="#skills-languages">Skills &amp; Languages</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Technical Skills</a>
             <a href="#contact">Contact</a>
             <a href="Steven_Aziz_Official_Resume.pdf" target="_blank">Resumé</a>
         </div>
@@ -71,21 +71,92 @@
     <section id="position">
         <header>Most Recent Position</header>
         <div>
-            <h1 class="position-logo"></h1>
-            <h2 class="title">Technical Expert</h2>
-            <h3 class="company">Apple, Inc.</h3>
-            <h4 class="date">May 2022 - April 2025</h4>
-            <h4 class="city">Seattle, WA</h4>
-            <p class="description">
+            <h1 class="company-logo"></h1>
+            <h2 class="job-title">Technical Expert</h2>
+            <h3 class="company-name">Apple, Inc.</h3>
+            <h4 class="date-span">May 2022 - April 2025</h4>
+            <h4 class="location">Seattle, WA</h4>
+            <p class="job-description">
                 As a Technical Expert at Apple, I combined extensive functional troubleshooting skills with my ability to inspire excitement around ownership across the Apple ecosystem — with a focus on iPhone. 
                 After conducting a thorough diagnosis, I enabled customers to select the best repair or upgrade option to meet their needs, and I performed repairs on iPhones and other Apple products as required. 
                 I also mentored Technical Specialists and frequently educated my team on service principles and guidelines to improve Same-Unit Repair (SUR) success rate and—by extension—the customer journey.
             </p>
         </div>
     </section>
+    <section id="projects">
+        <header>Projects</header>
+        <div class="projects-flex">
+            <div>
+                <img src="images/gpa_logo.png" alt="GPA">
+                <h1>The Graduation Planning App (GPA)</h1>
+                <h2>September 2023 - June 2024</h2>
+                <div>
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>MySQL</span>
+                    <span>Python</span>
+                    <span>SupaBase</span>
+                </div>
+                <p>
+                    I collaborated with a team of four to design and build a full-stack web application that scrapes and parses student transcripts to automatically generate optimized course schedules based on graduation requirements and preferences. 
+                    I developed the database schema, backend APIs, course prerequisites parser, and core scheduling algorithm. 
+                    In addition, I managed project documentation, coordinated team meetings, maintained development tools, and presented the final product to a board of industry professionals.
+                </p>
+            </div>
+            <div>
+                <img src="images/rust_logo.png" alt="Rust">
+                <h1>Lexical &amp; Syntax Analyzer</h1>
+                <h2>September 2023 - October 2023</h2>
+                <div>
+                    <span>Rust</span>
+                    <span>SWI-Prolog</span>
+                    <span>MIT-Scheme</span>
+                    <span>Cargo</span>
+                </div>
+                <p>
+                    I developed a compiler front end in Rust for a domain-specific language (DA) used in data analysis workflows, implementing both a lexical analyzer and a recursive-descent parser. 
+                    I designed error-handling logic to detect and report the first lexical or syntax error, following the "ostrich model" to ensure clean processing. 
+                    Based on CLI flags, the compiler generated valid Scheme or Prolog code from parsed DA input, enabling downstream statistical operations like linear regression and correlation.
+                </p>
+            </div>
+            <div>
+                <img src="images/simple_todo_list.png" alt="Simple To-Do List">
+                <h1>Simple To-Do List</h1>
+                <h2>November 2022</h2>
+                <div>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript Node</span>
+                    <span>Express.js</span>
+                    <span>MongoDB</span>
+                </div>
+                <p>
+                    I collaborated with a team of three to build a full-stack task management web application. 
+                    I developed the backend using Node.js and Express.js, designing RESTful APIs to handle task operations. 
+                    On the frontend, I used HTML, CSS, Bootstrap, and JavaScript to create a responsive and intuitive user interface. 
+                    The application leveraged MongoDB for efficient data storage and supported full CRUD functionality for user tasks.
+                </p>
+            </div>
+            <div>
+                <img src="images/postfix_tree.png" alt="Binary Expression Tree">
+                <h1>Expression Simplifier</h1>
+                <h2>November 2021</h2>
+                <div>
+                    <span>C++</span>
+                    <span>Valgrind</span>
+                </div>
+                <p>
+                    Using C++, I built binary expression trees from postfix algebra expressions by parsing tokens and constructing node-based tree structures with stack-based logic. 
+                    I implemented recursive simplification routines using arithmetic rules, identity properties, and distributive transformations, ensuring correctness and memory safety through structured input validation and Valgrind testing.
+                </p>
+            </div>
+        </div>
+    </section>
     <section id="education">
         <header>Education</header>
-        <div>
+        <div class="education-flex">
             <div>
                 <img src="images/spu_light.png" alt="Seattle Pacific University logo" class="brighter-onhover light-only">
                 <img src="images/spu_dark.png" alt="Seattle Pacific University logo" class="brighter-onhover dark-only">
@@ -95,120 +166,20 @@
             </div>
             <div>
                 <img src="images/ibdp_logo.png" alt="IB Diploma Program Logo" class="brighter-onhover">
-                <h1>International Baccalaureate Diploma</h1>
+                <h1>International Baccalaureate<br>Diploma</h1>
                 <p>June 2019</p>
                 <p>GPA 3.48</p>
             </div>
         </div>
     </section>
-    <section id="projects">
-        <header>Projects</header>
+    <section id="certifications">
+        <header>Certifications</header>
         <div>
-            <div>
-                <img src="images/gpa_logo.png" alt="GPA">
-                <h1>The Graduation Planning App (GPA)</h1>
-                <div>
-                    <span>Team of 5</span>
-                    <span>Web App</span>
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>MySQL</span>
-                </div>
-                <p>
-                    The Graduation Planning App (GPA) is a web application designed to simplify academic planning for students at SPU. 
-                    Thanks to extensive web scraping and custom parsing, GPA is able to collect information about each student's transcript and graduation requirements in order to offer a customized course plan. 
-                    As a backend/database developer, I designed and implemented the MySQL database along with all of the database APIs. 
-                    I also served as the People Operations Planner (POP) for the project, ensuring that the team was organized and on track to meet deadlines.
-                </p>
-            </div>
-            <div>
-                <img src="images/simple_todo_list.png" alt="Simple To-Do List">
-                <h1>Simple To-Do List</h1>
-                <div>
-                    <span>Team of 3</span>
-                    <span>Web App</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>MongoDB</span>
-                </div>
-                <p>
-                    By completing this simple to-do list project, I learned how to use Express and MongoDB to create a full-stack web application.
-                    The project involved creating a user interface with HTML, CSS, and JavaScript, and implementing a backend server using Node.js and Express.
-                    The application allows users to add, edit, and delete tasks, and stores the data in a MongoDB database.
-                    This project helped me gain practical experience in web development and understand the full stack development process.
-                </p>
-            </div>
-            <div>
-                <img src="images/rust_logo.png" alt="">
-                <h1>Lexical & Syntax Analyzer</h1>
-                <div>
-                    <span>Rust</span>
-                </div>
-                <p>
-                    Using Rust, I implemented a lexical and syntax analyzer for a simple programming language. 
-                    The analyzer reads in source code, tokenizes it, parses it, and, optionally, generates equivalent Scheme or Prolog code.
-                    The lexer and parser are designed to handle various syntax rules, such as operator precedence and parentheses matching. 
-                    The project also includes error handling to report syntax errors in the source code.
-                    The project demonstrates my understanding of compiler design principles and proficiency in Rust.
-                </p>
-            </div>
-            <div>
-                <img src="images/maze_solver.png" alt="Maze Solver">
-                <h1>Maze Solver</h1>
-                <div>
-                    <span>C++</span>
-                </div>
-                <p>
-                    The Maze Solver is a C++ program that implements a depth-first search algorithm to find a valid path through a maze. 
-                    The program reads in a maze from a text file, and uses recursion to explore all possible paths through the maze, marking visited cells and backtracking when necessary. 
-                    The program outputs the solution path, if one exists, and displays a live animation as it attempts to solve the maze.
-                </p>
-            </div>
-            <div>
-                <img src="images/adventurebot.png" alt="AdventureBot">
-                <h1>AdventureBot</h1>
-                <div>
-                    <span>Team of 4</span>
-                    <span>Embedded Systems</span>
-                    <span>MicroPython</span>
-                    <span>Raspberry Pi Pico</span>
-                </div>
-                <p>
-                    AdventureBot is an RC car that uses a Raspberry Pi Pico coupled with an ultrasonic sensor, speaker, and a Bluetooth module to enable a mobile-driven, surroundings-aware, playful user experience. 
-                    AdventureBot avoids obstacles and plays music through its speakers based on its state. 
-                    As a developer and the lead hardware engineer, I sourced the parts for AdventureBot, constructed the hardware, and performed tests and troubleshooting on MicroPython modules supplied by my team members.
-                </p>
-            </div>
-            <div>
-                <img src="images/backdrop.jpg" alt="">
-                <h1>Personal Portfolio Website</h1>
-                <div>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>GitHub Pages</span>
-                </div>
-                <p>
-                    This personal portfolio website is built using HTML, CSS, and JavaScript. 
-                    It showcases my projects, skills, and experience in a clean and responsive design. 
-                    The website is designed to be accessible and user-friendly, providing a platform for potential employers to learn more about my work. 
-                    This webiste is hosted on GitHub Pages, and the source code is viewable from my GitHub profile.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id="certifications-awards">
-        <header>Certifications &amp; Awards</header>
-        <div>
-            <div>
+            <div class="certification-header">
                 <img src="images/microsoft_logo.png" alt="Microsoft Logo" class="brighter-onhover">
                 <h1>Microsoft Certified: Azure Developer Associate</h1>
             </div>
-            <h3>Issued June 2025</h3>
+            <h2>Issued June 2025</h2>
             <p>
                 This certification demonstrates proficiency in designing and building cloud-based applications on Microsoft Azure. 
                 Key competencies include developing compute solutions with Azure App Service, Functions, and containerized apps; 
@@ -216,90 +187,102 @@
                 integrating authentication and authorization using Microsoft Identity and Entra ID; and enabling observability through Application Insights. 
                 Also skilled in building event-driven and message-based architectures using Event Grid, Event Hub, Service Bus, and API Management.
             </p>
-            <br>
             <a href="https://learn.microsoft.com/api/credentials/share/en-us/StevenAziz/4F2EDBB3C8822F0C?sharingId=272E275F7F14ADCD" target="_blank">View Certificate</a>
         </div>
     </section>
-    <section id="skills-languages">
-        <header>Skills &amp; Languages</header>
-        <div>
+    <section id="skills">
+        <header>Technical Skills</header>
+        <div class="skills-flex">
             <div>
                 <img src="images/azure_logo.png" alt="Microsoft Azure" class="brighter-onhover">
-                <p>Microsoft Azure</p>
-            </div>
-            <div>
-                <img src="images/python_logo.png" alt="Python" class="brighter-onhover">
-                <p>Python</p>
-            </div>
-            <div>
-                <img src="images/rust_logo.png" alt="Rust"class="brighter-onhover">
-                <p>Rust</p>
-            </div>
-            <div>
-                <img src="images/c_logo.png" alt="C" class="brighter-onhover">
-                <p>C</p>
-            </div>
-            <div>
-                <img src="images/cpp_logo.png" alt="C++" class="brighter-onhover">
-                <p>C++</p>
-            </div>
-            <div>
-                <img src="images/javascript_logo.png" alt="JavaScript" class="brighter-onhover">
-                <p>JavaScript</p>
-            </div>
-            <div>
-                <img src="images/mysql_logo.png" alt="MySQL" class="brighter-onhover">
-                <p>MySQL</p>
+                <span>Microsoft Azure</span>
             </div>
             <div>
                 <img src="images/nodejs_logo.svg" alt="Node.js" class="brighter-onhover">
-                <p>Node.js</p>
+                <span>Node.js</span>
+            </div>
+            <div>
+                <img src="images/cpp_logo.png" alt="C++" class="brighter-onhover">
+                <span>C++</span>
+            </div>
+            <div>
+                <img src="images/rust_logo.png" alt="Rust"class="brighter-onhover">
+                <span>Rust</span>
+            </div>
+            <div>
+                <img src="images/python_logo.png" alt="Python" class="brighter-onhover">
+                <span>Python</span>
+            </div>
+            <div>
+                <img src="images/mysql_logo.png" alt="MySQL" class="brighter-onhover">
+                <span>MySQL</span>
             </div>
             <div>
                 <img src="images/assembly_logo.png" alt="Assembly Language" class="brighter-onhover">
-                <p>Assembly Language</p>
+                <span>Assembly Language</span>
             </div>
             <div>
-                <img src="images/prolog_logo.png" alt="SWI-Prolog" class="brighter-onhover">
-                <p>SWI-Prolog</p>
+                <img src="images/mongodb_logo.png" alt="MongoDB" class="brighter-onhover">
+                <span>MongoDB</span>
+            </div>
+            <div>
+                <img src="images/express_light.png" alt="Express.js" class="light-only">
+                <img src="images/express_dark.png" alt="Express.js" class="dark-only">
+                <span>Express.js</span>
             </div>
             <div>
                 <img src="images/scheme_logo.jpg" alt="MIT-Scheme" class="brighter-onhover">
-                <p>MIT-Scheme</p>
+                <span>MIT-Scheme</span>
             </div>
             <div>
-                <img src="images/html_logo.png" alt="HTML" class="brighter-onhover">
-                <p>HTML</p>
+                <img src="images/prolog_logo.png" alt="SWI-Prolog" class="brighter-onhover">
+                <span>SWI-Prolog</span>
+            </div>
+            <div>
+                <img src="images/javascript_logo.png" alt="JavaScript" class="brighter-onhover">
+                <span>JavaScript</span>
             </div>
             <div>
                 <img src="images/css_logo.png" alt="CSS" class="brighter-onhover">
-                <p>CSS</p>
+                <span>CSS</span>
             </div>
             <div>
-                <img src="images/json_logo.png" alt="JSON" class="brighter-onhover">
-                <p>JSON</p>
+                <img src="images/html_logo.png" alt="HTML" class="brighter-onhover">
+                <span>HTML</span>
             </div>
             <div>
                 <img src="images/docker.png" alt="Docker" class="brighter-onhover">
-                <p>Docker</p>
+                <span>Docker</span>
+            </div>
+            <div>
+                <img src="images/figma_logo.png" alt="Figma" class="brighter-onhover">
+                <span>Figma</span>
+            </div>
+            <div>
+                <img src="images/lucidchart_logo.png" alt="LucidChart" class="brighter-onhover">
+                <span>LucidChart</span>
+            </div>
+            <div>
+                <img src="images/jira_logo.png" alt="Jira" class="brighter-onhover">
+                <span>Jira</span>
+            </div>
+            <div>
+                <img src="images/confluence_logo.png" alt="Confluence" class="brighter-onhover">
+                <span>Confluence</span>
             </div>
             <div>
                 <img src="images/vscode.png" alt="Visual Studio Code" class="brighter-onhover">
-                <p>Visual Studio Code</p>
+                <span>Visual Studio Code</span>
             </div>
             <div>
-                <img src="images/github_light.png" alt="GitHub" class="brighter-onhover light-only">
-                <img src="images/github_dark.png" alt="GitHub" class="brighter-onhover dark-only">
-                <p>GitHub</p>
-            </div>
-            <div>
-                <img src="images/scrum.png" alt="SCRUM" class="brighter-onhover">
-                <p>SCRUM</p>
+                <img src="images/github_light.png" alt="GitHub" class="light-only">
+                <img src="images/github_dark.png" alt="GitHub" class="dark-only">
+                <span>GitHub</span>
             </div>
         </div>
     </section>
     <footer id="contact">
-        <div>
+        <div class="footer-flex">
             <p id="copyright"></p>
             <div>
                 <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="light-only">
