@@ -61,18 +61,18 @@
 
     --bg-light: hsl(0, 0%, 98%);
     --bg2-light: hsl(0, 0%, 94%);
-    --bg-dark: hsl(0, 0%, 8%);
-    --bg2-dark: hsl(0, 0%, 12%);
+    --bg-dark: hsl(0, 0%, 4%);
+    --bg2-dark: hsl(0, 0%, 10%);
     --border-light: hsl(0, 0%, 100%);
-    --border-dark: hsl(0, 0%, 10%);
-    --highlight-light: hsl(0, 0%, 88%);
-    --highlight-dark: hsl(0, 0%, 18%);
-    --heading-light: hsl(0, 0%, 5%);
-    --heading2-light: hsl(0, 0%, 10%);
-    --heading-dark: hsl(0, 0%, 95%);
-    --heading2-dark: hsl(0, 0%, 90%);
-    --text-light: hsl(0, 0%, 20%);
-    --text-dark: hsl(0, 0%, 80%);
+    --border-dark: hsl(0, 0%, 8%);
+    --highlight-light: hsl(0, 0%, 86%);
+    --highlight-dark: hsl(0, 0%, 16%);
+    --heading-light: hsl(0, 0%, 4%);
+    --heading2-light: hsl(0, 0%, 8%);
+    --heading-dark: hsl(0, 0%, 96%);
+    --heading2-dark: hsl(0, 0%, 92%);
+    --text-light: hsl(0, 0%, 12%);
+    --text-dark: hsl(0, 0%, 88%);
     --transparent-white: hsla(0, 0%, 100%, 0.8);
     --transparent-black: hsla(0, 0%, 0%, 0.8);
     --blue: rgb(50, 117, 229);
@@ -286,7 +286,7 @@ section>*, footer>* {
     margin: 0 auto;
 }
 #about p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .company-logo {
     margin: 0 0 1rem;
@@ -314,7 +314,7 @@ section>*, footer>* {
 }
 .job-description {
     margin: 1rem 0 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .projects-flex {
     display: flex;
@@ -337,7 +337,7 @@ section>*, footer>* {
 }
 .projects-flex h1 {
     margin: 0.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .projects-flex h2 {
     margin: 0.5rem 0;
@@ -346,7 +346,7 @@ section>*, footer>* {
 }
 .projects-flex p {
     margin: 1rem 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .projects-flex>div>div {
     display: flex;
@@ -404,7 +404,7 @@ section>*, footer>* {
 }
 #certifications p {
     margin: 1rem 0 2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 #certifications a {
     border: 1px solid var(--blue);
