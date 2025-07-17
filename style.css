@@ -27,7 +27,7 @@
     main>a:hover {
         opacity: 1;
     }
-    #certifications a:hover {
+    .button:hover {
         background-color: var(--blue);
         color: white;
     }
@@ -210,6 +210,15 @@ nav {
 .brighter-onhover {
     transition: filter 0.3s ease-in-out;
 }
+.button {
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: var(--blue);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
 header {
     padding-bottom: 2rem;
     font-size: 3rem;
@@ -326,7 +335,7 @@ section>*, footer>* {
 }
 .projects-flex>div {
     border-radius: 12px;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
     max-width: 480px;
     background-color: light-dark(var(--bg2-light), var(--bg2-dark));
     flex: 1 1 320px;
@@ -345,7 +354,7 @@ section>*, footer>* {
     font-weight: 300;
 }
 .projects-flex p {
-    margin: 1rem 0;
+    margin: 1rem 0 1.2rem;
     font-size: 1rem;
 }
 .projects-flex>div>div {
@@ -406,15 +415,6 @@ section>*, footer>* {
     margin: 1rem 0 2rem;
     font-size: 1.1rem;
 }
-#certifications a {
-    border: 1px solid var(--blue);
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-size: 1rem;
-    color: var(--blue);
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
 .skills-flex {
     display: flex;
     flex-direction: row;
@@ -455,6 +455,7 @@ footer {
 .footer-flex p {
     margin: 0;
     text-align: left;
+    font-size: 0.8rem;
 }
 .footer-flex>div {
     display: flex;
