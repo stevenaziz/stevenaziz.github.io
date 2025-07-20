@@ -267,7 +267,7 @@ main h1 {
     margin: 2rem 0 1rem;
     text-align: center;
     font-size: 5rem;
-    line-height: 4rem;
+    line-height: 4.4rem;
     color: var(--heading-dark);
 }
 main h2 {
@@ -436,7 +436,7 @@ section>*, footer>* {
     height: 4rem;
 }
 .skills-flex span {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     text-align: center;
 }
 footer {
@@ -455,7 +455,7 @@ footer {
 .footer-flex p {
     margin: 0;
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.84rem;
 }
 .footer-flex>div {
     display: flex;
