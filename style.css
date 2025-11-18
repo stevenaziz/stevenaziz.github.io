@@ -272,6 +272,7 @@ main h1 {
 }
 main h2 {
     margin: 1rem 0 2rem;
+    max-width: 24rem;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
