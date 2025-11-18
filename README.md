@@ -20,8 +20,11 @@ Built with pure HTML, CSS, and JavaScript — this is a lightweight, no-framewor
 ### 🧑‍💼 About
 A brief introduction to my values, work ethic, and passion for software development. I take pride in building things that matter and learning continuously — guided by integrity and service.
 
-### 💼 Most Recent Position
-**Technical Expert** @ **Apple Inc.** (May 2022 – April 2025)  
+### 💼 Experience
+**Customer Support Specialist** @ **Rippling** (October 2025 - Present)
+Focused on expert product support, end-to-end issue resolution, and collaborating across teams to elevate customer satisfaction and overall product experience.
+
+**Technical Expert** @ **Apple** (May 2022 – April 2025)  
 Focused on troubleshooting, device repair, and mentoring technical staff to improve repair outcomes and customer experience.
 
 ### 💻 Projects
