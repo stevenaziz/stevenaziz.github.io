@@ -272,7 +272,7 @@ main h1 {
 }
 main h2 {
     margin: 1rem 0 2rem;
-    max-width: 24rem;
+    max-width: 24.8rem;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
@@ -349,7 +349,7 @@ section>*, footer>* {
     padding: 1rem 1rem 2rem;
     max-width: 480px;
     background-color: light-dark(var(--bg2-light), var(--bg2-dark));
-    flex: 1 1 320px;
+    flex: 1 1 15rem;
 }
 .projects-flex img {
     border-radius: 12px;
@@ -382,24 +382,18 @@ section>*, footer>* {
     background-color: light-dark(var(--highlight-light), var(--highlight-dark));
     font-size: 0.8rem;
 }
-.education-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+#education img {
+    width: 16rem;
 }
-.education-flex img {
-    width: 256px;
-}
-.education-flex h1 {
-    margin: 1rem 0;
+#education h1 {
+    margin: 2rem 0 0;
     font-size: 1.5rem;
+    font-weight: 500;
 }
-.education-flex p {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
+#education h2 {
+    margin: 0.6rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 .certification-header {
     display: flex;

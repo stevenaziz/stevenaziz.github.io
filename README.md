@@ -44,10 +44,7 @@ Focused on troubleshooting, device repair, and mentoring technical staff to impr
 ### 🎓 Education
 
 - **Seattle Pacific University**  
-  Bachelor of Science, Computer Science (June 2025) — GPA: 3.47
-
-- **International Baccalaureate (IB) Diploma**  
-  Graduated June 2019 — GPA: 3.48
+  Bachelor of Science, Computer Science
 
 ### 📜 Certifications
 
