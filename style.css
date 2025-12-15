@@ -214,6 +214,7 @@ nav {
     border: 1px solid var(--blue);
     border-radius: 20px;
     padding: 8px 16px;
+    background-color: transparent;
     font-size: 1rem;
     color: var(--blue);
     cursor: pointer;
@@ -443,6 +444,60 @@ section>*, footer>* {
 .skills-flex span {
     font-size: 0.92rem;
     text-align: center;
+}
+.status {
+    margin: 0 -36px;
+    padding: 0 1rem;
+    width: 100vw;
+    max-width: none;
+    height: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+}
+.success {
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+    height: min-content !important;
+    background-color: rgb(0, 143, 95);
+}
+.fail {
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+    height: min-content !important;
+    background-color: rgb(184, 0, 46);
+}
+form {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 512px;
+}
+input, label, textarea {
+    display: block;
+}
+label {
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+input, textarea {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 0.92rem;
+}
+input {
+    height: 1rem;
+}
+textarea {
+    height: 8rem;
+}
+.disabled_button {
+    background-color: var(--blue);
+    color: white;
+    cursor: not-allowed;
 }
 footer {
     border-top: 12px solid light-dark(var(--border-light), var(--border-dark));

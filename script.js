@@ -35,6 +35,60 @@ function main() {
         anchor.addEventListener('click', closeDropdown);
     }
 
+    // selects contact form elements
+    const form = document.getElementById('contact_form');
+    const form_status = document.getElementById('form_status');
+    const form_button = document.getElementById('submit_button');
+
+    // send form data after submission
+    form.addEventListener('submit', function(event) {
+        // Honeypot check
+        if (form.company.value) {
+            return;
+        }
+
+        event.preventDefault();
+        form_button.textContent = "Sending...";
+        form_button.classList.add("disabled_button");
+        form_button.disabled = true;
+
+        const service_id = "Vu.2GhMT3iKBzKD7";
+        const template_id = "*x!z344nzA4gJjov";
+        let message_submitted = false;
+
+        // emailjs.sendForm(
+        //     service_id,
+        //     template_id,
+        //     this
+        // ).then(
+        //     function() {
+        //         message_submitted = true;
+        //     },
+        //     function(error) {
+        //         console.error(error);
+        //     }
+        // );
+
+        setTimeout(() => {
+            form_button.textContent = "Send";
+            form_button.classList.remove("disabled_button");
+            form_button.disabled = false;
+
+            if (message_submitted) {
+                form_status.textContent = "The message has been sent.";
+                form_status.classList.add("success");
+                form.reset();
+                setTimeout(() => {
+                    form_status.classList.remove("success");
+                }, 4000);
+            }
+            else {
+                form_status.textContent = "Oops! Something went wrong. If the issue persists, please try sending an email instead.";
+                form_status.classList.add("fail");
+            }
+        }, 1600);
+    });
+
     // footer copyright text
     document.getElementById("copyright").innerHTML = "Copyright &copy; 2018-" + new Date().getFullYear() + " Steven Aziz. All rights reserved.";
 

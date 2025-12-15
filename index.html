@@ -18,7 +18,9 @@
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">(function() {emailjs.init({publicKey: "IyJ1WMwJAVpS1NBXq",});})();</script>
     <title>Steven Aziz</title>
 </head>
 <body onload="main()" onresize="checkViewport()">
@@ -293,7 +295,21 @@
             </div>
         </div>
     </section>
-    <footer id="contact">
+    <section id="contact">
+        <header>Get in Touch</header>
+        <p aria-live="polite" class="status" id="form_status"></p>
+        <form id="contact_form">
+            <input type="text" name="company" tabIndex="-1" autoComplete="off" maxlength="128" aria-hidden="true" style="display: none;"/>
+            <label for="name">Name</label>
+            <input type="text" name="name" tabindex="0" id="name" maxlength="128" required placeholder="John Doe">
+            <label for="email">Email</label>
+            <input type="email" name="email" tabindex="0" id="email" required placeholder="johndoe@email.com">
+            <label for="message">Message</label>
+            <textarea name="message" tabindex="0" id="message" required placeholder="Write your message here...."></textarea>
+            <button type="submit" class="button" tabindex="0" id="submit_button">Send</button>
+        </form>
+    </section>
+    <footer>
         <div class="footer-flex">
             <p id="copyright"></p>
             <div>
