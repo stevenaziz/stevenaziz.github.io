@@ -56,18 +56,18 @@ function main() {
         const template_id = "*x!z344nzA4gJjov";
         let message_submitted = false;
 
-        // emailjs.sendForm(
-        //     service_id,
-        //     template_id,
-        //     this
-        // ).then(
-        //     function() {
-        //         message_submitted = true;
-        //     },
-        //     function(error) {
-        //         console.error(error);
-        //     }
-        // );
+        emailjs.sendForm(
+            service_id,
+            template_id,
+            this
+        ).then(
+            function() {
+                message_submitted = true;
+            },
+            function(error) {
+                console.error(error);
+            }
+        );
 
         setTimeout(() => {
             form_button.textContent = "Send";
