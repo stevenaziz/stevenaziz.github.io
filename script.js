@@ -30,7 +30,7 @@ function main() {
     // selects all navigation bar links
     const mobileLinks = document.querySelectorAll("nav>div>a");
 
-    // adds event listener to the navigation bar links -> close dropdown when clicked
+    // adds event listener to the navigation bar links (close dropdown when any button is clicked)
     for (anchor of mobileLinks) {
         anchor.addEventListener('click', closeDropdown);
     }
@@ -75,16 +75,16 @@ function main() {
             form_button.disabled = false;
 
             if (message_submitted) {
-                form_status.textContent = "The message has been sent.";
-                form_status.classList.add("success");
+                form_status.textContent = "Thanks! Your message has been sent.";
+                form_status.classList.add("status_success");
                 form.reset();
                 setTimeout(() => {
-                    form_status.classList.remove("success");
-                }, 4000);
+                    form_status.classList.remove("status_success");
+                }, 5000);
             }
             else {
-                form_status.textContent = "Oops! Something went wrong. If the issue persists, please try sending an email instead.";
-                form_status.classList.add("fail");
+                form_status.textContent = "Message not sent. Please try again or email Steven directly.";
+                form_status.classList.add("status_error");
             }
         }, 1600);
     });
