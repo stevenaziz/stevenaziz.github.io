@@ -484,22 +484,24 @@ form {
 }
 input, label, textarea {
     display: block;
+    text-align: left;
 }
 label {
     margin-bottom: 0.4rem;
     font-size: 1.6rem;
     font-weight: 200;
+    color: light-dark(var(--heading2-light), var(--heading2-dark));
 }
 input, textarea {
     margin-bottom: 1rem;
+    padding: 0.6rem 0.4rem;
     width: 100%;
-    font-size: 0.92rem;
-}
-input {
-    height: 1rem;
+    font-size: 1rem;
+    color: light-dark(var(--text-light), var(--text-dark));
 }
 textarea {
-    height: 8rem;
+    line-height: 1.4rem;
+    resize: vertical;
 }
 .disabled_button {
     background-color: var(--blue);
