@@ -58,7 +58,7 @@
         <img src="images/Steven_Aziz.jpg" alt="Steven Aziz">
         <h1>Steven Aziz</h1>
         <h2>
-            Customer Support Specialist at Rippling and Seattle Pacific University Alum with a Bachelor of Science in Computer Science
+            Customer Support Specialist at Rippling and Seattle Pacific University Alumnus with a Bachelor of Science in Computer Science
             <br><br>
             Seattle, WA
         </h2>
@@ -77,8 +77,10 @@
     <section id="experience">
         <header>Experience</header>
         <div>
-            <img src="/images/rippling_light.png" alt="Rippling" class="company-logo light-only">
-            <img src="/images/rippling_dark.png" alt="Rippling" class="company-logo dark-only">
+            <picture>
+                <source srcset="/images/rippling_dark.png" media="(prefers-color-scheme: dark)">
+                <img src="/images/rippling_light.png" alt="Rippling" class="company-logo">
+            </picture>
             <h2 class="job-title">Customer Support Specialist</h2>
             <h3 class="company-name">Rippling</h3>
             <h4 class="date-span">October 2025 - Present</h4>
@@ -106,7 +108,7 @@
         <header>Projects</header>
         <div class="projects-flex">
             <div>
-                <img src="images/gpa_logo.png" alt="GPA">
+                <img src="images/gpa_logo.png" alt="Graduation Planning App">
                 <h1>The Graduation Planning App (GPA)</h1>
                 <h2>September 2023 - June 2024</h2>
                 <div>
@@ -142,7 +144,7 @@
                 <a href="https://github.com/stevenaziz/Rust-Parser" target="_blank" class="button">View on GitHub</a>
             </div>
             <div>
-                <img src="images/simple_todo_list.png" alt="Simple To-Do List">
+                <img src="images/simple_todo_list.png" alt="Simple Task Manager">
                 <h1>Simple Task Manager</h1>
                 <h2>November 2022</h2>
                 <div>
@@ -180,8 +182,10 @@
     <section id="education">
         <header>Education</header>
         <div>
-            <img src="images/spu_light.png" alt="Seattle Pacific University logo" class="brighter-onhover light-only">
-            <img src="images/spu_dark.png" alt="Seattle Pacific University logo" class="brighter-onhover dark-only">
+            <picture>
+                <source srcset="images/spu_dark.png" media="(prefers-color-scheme: dark)">
+                <img src="images/spu_light.png" alt="Seattle Pacific University">
+            </picture>
             <h1>Bachelor of Science, Computer Science</h1>
             <h2>Seattle Pacific University — 2025</h2>
         </div>
@@ -190,7 +194,7 @@
         <header>Certifications</header>
         <div>
             <div class="certification-header">
-                <img src="images/microsoft_logo.png" alt="Microsoft Logo" class="brighter-onhover">
+                <img src="images/microsoft_logo.png" alt="Microsoft">
                 <h1>Microsoft Certified: Azure Developer Associate</h1>
             </div>
             <h2>Issued June 2025</h2>
@@ -240,8 +244,10 @@
                 <span>MongoDB</span>
             </div>
             <div>
-                <img src="images/express_light.png" alt="Express.js" class="light-only">
-                <img src="images/express_dark.png" alt="Express.js" class="dark-only">
+                <picture>
+                    <source srcset="images/express_dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="images/express_light.png" alt="Express.js">
+                </picture>
                 <span>Express.js</span>
             </div>
             <div>
@@ -289,8 +295,10 @@
                 <span>Visual Studio Code</span>
             </div>
             <div>
-                <img src="images/github_light.png" alt="GitHub" class="light-only">
-                <img src="images/github_dark.png" alt="GitHub" class="dark-only">
+                <picture>
+                    <source srcset="images/github_dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="images/github_light.png" alt="GitHub">
+                </picture>
                 <span>GitHub</span>
             </div>
         </div>
@@ -313,30 +321,29 @@
         <div class="footer-flex">
             <p id="copyright"></p>
             <div>
-                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="light-only">
-                    <img src="images/in_light.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank">
+                    <picture>
+                        <source srcset="images/in_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="images/in_light.png" alt="LinkedIn">
+                    </picture>
                 </a>
-                <a href="https://www.linkedin.com/in/stevenaziz" target="_blank" class="dark-only">
-                    <img src="images/in_dark.png" alt="LinkedIn">
+                <a href="https://github.com/stevenaziz" target="_blank">
+                    <picture>
+                        <source srcset="images/github_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="images/github_light.png" alt="GitHub">
+                    </picture>
+                    
                 </a>
-                <a href="https://github.com/stevenaziz" target="_blank" class="light-only">
-                    <img src="images/github_light.png" alt="GitHub">
-                </a>
-                <a href="https://github.com/stevenaziz" target="_blank" class="dark-only">
-                    <img src="images/github_dark.png" alt="GitHub">
-                </a>
-                <a href="mailto:hello@stevenaziz.com" target="_blank" class="light-only">
-                    <img src="images/mail_light.png" alt="Email">
-                </a>
-                <a href="mailto:hello@stevenaziz.com" target="_blank" class="dark-only">
-                    <img src="images/mail_dark.png" alt="Email">
-                </a>
-                <a href="Steven_Aziz_Official_Resume.pdf" target="_blank" class="light-only">
-                    <img src="images/resume_light.png" alt="Resumé">
-                </a>
-                <a href="Steven_Aziz_Official_Resume.pdf" target="_blank" class="dark-only">
-                    <img src="images/resume_dark.png" alt="Resumé">
-                </a>
+                <a href="mailto:hello@stevenaziz.com" target="_blank">
+                    <picture>
+                        <source srcset="images/mail_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="images/mail_light.png" alt="Email">
+                </picture>
+                <a href="Steven_Aziz_Official_Resume.pdf" target="_blank">
+                    <picture>
+                        <source srcset="images/resume_dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="images/resume_light.png" alt="Resume">
+                </picture>
             </div>
         </div>
     </footer>

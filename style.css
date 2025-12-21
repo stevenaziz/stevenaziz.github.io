@@ -13,7 +13,7 @@
         transform: translateY(24px);
     }
 }
-/* Styles applied if the device supports hover */
+/* Styles applied only if the device supports hover */
 @media (hover:hover) {
     nav a:hover {
         color: light-dark(black, white);
@@ -22,7 +22,7 @@
         background-color: light-dark(black, white);
     }
     .brighter-onhover:hover {
-    filter: brightness(1.2);
+        filter: brightness(1.4);
     }
     main>a:hover {
         opacity: 1;
@@ -30,22 +30,6 @@
     .button:hover {
         background-color: var(--blue);
         color: white;
-    }
-}
-@media (prefers-color-scheme: light) {
-    .light-only {
-        display: initial !important;
-    }
-    .dark-only {
-        display: none !important;
-    }
-}
-@media (prefers-color-scheme: dark) {
-    .light-only {
-        display: none !important;
-    }
-    .dark-only {
-        display: initial !important;
     }
 }
 * {
@@ -207,9 +191,6 @@ nav {
     opacity: 1 !important;
     top: 71px !important;
 }
-.brighter-onhover {
-    transition: filter 0.3s ease-in-out;
-}
 .button {
     border: 1px solid var(--blue);
     border-radius: 20px;
@@ -237,6 +218,9 @@ p, span {
     color: light-dark(var(--text-light), var(--text-dark));
     text-align: justify;
     line-height: 1.25;
+}
+.brighter-onhover {
+    transition: filter 0.3s ease-in-out;
 }
 main {
     box-sizing: border-box;
