@@ -307,14 +307,14 @@
         <header>Get in Touch</header>
         <p aria-live="polite" id="form_status" class="form_status"></p>
         <form id="contact_form">
-            <input type="text" name="company" tabIndex="-1" autoComplete="off" maxlength="128" aria-hidden="true" style="display: none;"/>
+            <input name="company" type="text" autocomplete="off" maxlength="128" aria-hidden="true" tabIndex="-1" style="display: none;"/>
             <label for="name">Name</label>
-            <input type="text" name="name" tabindex="0" id="name" maxlength="128" required placeholder="Your full name">
+            <input id="name" name="name" type="text" autocomplete="on" autocapitalize="words" maxlength="128" required tabindex="0" placeholder="Your full name">
             <label for="email">Email</label>
-            <input type="email" name="email" tabindex="0" id="email" required placeholder="Your email address">
+            <input id="email" name="email" type="email" autocomplete="on" required tabindex="0" placeholder="Your email address">
             <label for="message">Message</label>
-            <textarea name="message" tabindex="0" id="message" required placeholder="What's on your mind?" rows="8"></textarea>
-            <button type="submit" class="button" tabindex="0" id="submit_button">Send</button>
+            <textarea id="message" name="message" autocomplete="off" autocorrect="on" autocapitalize="sentences" required tabindex="0" placeholder="What's on your mind?" rows="8"></textarea>
+            <button id="submit_button" type="submit" tabindex="0" class="button">Send</button>
         </form>
     </section>
     <footer>
