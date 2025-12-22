@@ -76,6 +76,7 @@ function main() {
 
             if (message_submitted) {
                 form_status.textContent = "Thanks! Your message has been sent.";
+                form_status.classList.remove("status_error");
                 form_status.classList.add("status_success");
                 form.reset();
                 setTimeout(() => {
