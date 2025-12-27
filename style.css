@@ -30,6 +30,7 @@
     .button:hover {
         background-color: var(--blue);
         color: white;
+        box-shadow: 0px 0px 4px 2px rgba(50, 117, 229, 0.36);
     }
 }
 * {
@@ -44,16 +45,16 @@
     font-size: clamp(16px, 0.5vw + 14.4px, 24px);
 
     --bg-light: hsl(0, 0%, 98%);
-    --bg2-light: hsl(0, 0%, 94%);
     --bg-dark: hsl(0, 0%, 4%);
+    --bg2-light: hsl(0, 0%, 94%);
     --bg2-dark: hsl(0, 0%, 10%);
     --border-light: hsl(0, 0%, 100%);
     --border-dark: hsl(0, 0%, 8%);
-    --highlight-light: hsl(0, 0%, 86%);
-    --highlight-dark: hsl(0, 0%, 16%);
+    --highlight-light: hsl(0, 0%, 92%);
+    --highlight-dark: hsl(0, 0%, 12%);
     --heading-light: hsl(0, 0%, 4%);
-    --heading2-light: hsl(0, 0%, 8%);
     --heading-dark: hsl(0, 0%, 96%);
+    --heading2-light: hsl(0, 0%, 8%);
     --heading2-dark: hsl(0, 0%, 92%);
     --text-light: hsl(0, 0%, 12%);
     --text-dark: hsl(0, 0%, 88%);
@@ -334,12 +335,18 @@ section>*, footer>* {
     border-radius: 12px;
     padding: 1rem 1rem 2rem;
     max-width: 480px;
-    background-color: light-dark(var(--bg2-light), var(--bg2-dark));
+    background: linear-gradient(
+        135deg, 
+        light-dark(var(--bg-light), var(--bg2-dark)) 0%, 
+        light-dark(var(--bg2-light), var(--bg-dark)) 100%
+    );
+    box-shadow: 4px 4px 16px -2px light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.04));
     flex: 1 1 15rem;
 }
 .projects-flex img {
     border-radius: 12px;
     width: 100%;
+    box-shadow: 4px 4px 12px -2px light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.24));
 }
 .projects-flex h1 {
     margin: 0.5rem 0;
@@ -366,6 +373,7 @@ section>*, footer>* {
     border-radius: 20px;
     padding: 8px 12px;
     background-color: light-dark(var(--highlight-light), var(--highlight-dark));
+    box-shadow: 2px 2px 6px -2px light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.04));
     font-size: 0.8rem;
 }
 #education img {
@@ -400,7 +408,7 @@ section>*, footer>* {
 #certifications h2 {
     margin: 1rem 0;
     font-size: 1.1rem;
-    text-decoration: underline;
+    font-weight: 400;
 }
 #certifications p {
     margin: 1rem 0 2rem;
