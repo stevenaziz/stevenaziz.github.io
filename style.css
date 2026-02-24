@@ -204,7 +204,7 @@ nav {
 }
 header {
     padding-bottom: 2rem;
-    text-align: left;
+    text-align: start;
     font-size: 3rem;
     font-weight: 500;
     color: light-dark(var(--heading-light), var(--heading-dark));
@@ -217,7 +217,7 @@ h1 {
 }
 p, span {
     color: light-dark(var(--text-light), var(--text-dark));
-    text-align: justify;
+    text-align: start;
     line-height: 1.25;
 }
 .brighter-onhover {
@@ -476,7 +476,7 @@ form {
 }
 input, label, textarea {
     display: block;
-    text-align: left;
+    text-align: start;
 }
 label {
     margin-bottom: 0.4rem;
@@ -515,7 +515,7 @@ footer {
 }
 .footer-flex p {
     margin: 0;
-    text-align: left;
+    text-align: start;
     font-size: 0.84rem;
 }
 .footer-flex>div {
